@@ -1,3 +1,4 @@
+// test de l'animation des 2 images pour la page d'accueil dans un fichier séparé:
 const picturesContainerLeft = document.getElementsByClassName('picture-curtain')[0].getClientRects()[0].left;
 const foregroundPicture = document.getElementsByClassName('foreground-picture-container')[0];
 

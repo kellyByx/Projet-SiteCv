@@ -8,7 +8,7 @@ html,
 body{
     padding:0;
     margin:0;
-    font-size: 20px;
+    font-size: 16px;
     font-family: Arial, Helvetica, sans-serif;
     background-color: rgb(217, 214, 214);
 }
@@ -63,7 +63,7 @@ body{
     position: fixed;
     color: #555;
     background-color:#e3edf7;  // #ecf1f3;
-    font-size: 19px;
+    font-size: 18px;
 }
 
 .menu-haut{
@@ -144,14 +144,14 @@ a:hover{
 
 .liens-horizontal{
     height:40px;
-    width:  10%;
+    width:  11%;
     padding: 1%;
 }
 
 .liens-vertical{
     height:25%;
     width: 40px;
-    padding: 1%;
+    padding: 1.2%;
 }
 .boutton{
    margin: 0 1%;
@@ -176,7 +176,7 @@ a:hover{
 
 // --------- Page: Accueil --------
 .accueil{
-    border: 1px solid aqua;
+    
     position: relative;
     img{
     display: block;
@@ -204,6 +204,7 @@ a:hover{
 h1{
     font-size: 60px;
     text-align: right;
+    
         
 }
  // Animation images :
