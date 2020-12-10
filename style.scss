@@ -1,0 +1,312 @@
+@import "@fortawesome/fontawesome-free/css/all.css";
+*{
+    box-sizing: border-box;
+   // overflow: hidden;
+}
+
+html,
+body{
+    padding:0;
+    margin:0;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(217, 214, 214);
+}
+
+.container-all{
+    display: flex;
+    align-items: center;
+    width: calc(100vw*5);
+    height: calc(100vh*5);
+    justify-content: space-between;
+    padding:10% ;
+    margin-right: 10%;
+}
+
+.container-gauche,
+.container-central,
+.container-droit{
+      height: calc(100vh*4);
+}
+
+.container-gauche,
+.container-droit{
+    .page{
+    margin-top: 35%;
+    }
+}
+
+.page{
+    height: 100vh;
+    width: 100vw;
+    margin-bottom: 20%;
+    
+}
+
+.parcour,
+.contact,
+.accueil{
+    background-color:#fff;
+   }
+
+   .graphisme-portfolio,
+   .graphisme-competence{
+    background-color: rgb(252, 169, 16);
+   }
+.web-developper-portfolio,
+.web-developper-competence{
+    background-color: rgb(27, 252, 252);
+   }
+
+ //--------- Menu fixe --------
+.menu-fixe{
+    position: fixed;
+    color: #555;
+    background-color:#e3edf7;  // #ecf1f3;
+    font-size: 19px;
+}
+
+.menu-haut{
+    z-index: 100;
+    top:0;
+    width: 100vw;
+    height: 7vh;
+    .liens-haut{
+        display: flex;
+        justify-content: space-between;
+        width: 96vw;
+        margin-top: 2vh;
+        margin-left: 1.2vw;
+        
+        .lien-nom{
+            margin-right: 8vw;
+         }
+    }
+  }
+
+.menu-gauche{
+    z-index: 80;
+    left:0;
+    width: 3.6vw;
+    height: 100vh;
+    writing-mode: vertical-rl;
+    text-orientation:mixed;
+    .liens-gauche{
+        display: flex;
+        justify-content: space-around;
+        height: 42vw;
+        width: 6vh;
+        margin-top: 8vh;
+        margin-right: 0.1vw;           
+    }
+}
+
+.menu-droite{
+    z-index: 80;
+    right: 0;
+    width: 3.6vw;
+    height: 100vh;
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    .liens-droite{
+        display: flex;
+        justify-content: space-around;
+        height: 42vw;
+        width: 6vh;
+        margin-top: 8vh;
+        margin-right: 0.1vw; 
+    }
+}
+.menu-bas{
+    z-index: 100;
+    bottom:0;
+    width: 100vw;
+    height: 7vh;
+   
+    .liens-bas{
+        display: flex;
+        justify-content: space-between;
+        width: 64vw;
+        margin-top: 0.9vh;
+        margin-left: 17vw;
+        //border: 1px solid red;
+    }
+}
+// --------- Apparance boutton-------- 
+a{
+    text-decoration: none ;
+    color:rgb(210, 155, 247);
+}
+
+a:hover{
+    color: purple;
+}
+
+.liens-horizontal{
+    height:40px;
+    width:  10%;
+    padding: 1%;
+}
+
+.liens-vertical{
+    height:25%;
+    width: 40px;
+    padding: 1%;
+}
+.boutton{
+   margin: 0 1%;
+    border-radius: 8px;
+    text-align: center;
+    background-color:#e3edf7; //#ecf1f3
+    box-shadow: 6px 6px 10px -1px rgba(0,0,0,0.15), 6px 6px 10px -1px rgba(255,255,255,0.7);
+    border: 1px solid rgba(0,0,0,0);
+    transition: transform 0.4s;
+}
+
+.boutton:hover{
+   box-shadow: inset 4px 4px 6px -1px rgba(0,0,0,0.2),
+    inset 4px 4px 6px -1px rgba(255,255,255,0.7),
+   -0.5px -0.5px 0px  rgba(255,255,255,1),
+   0.5px 0.5px 0px  rgba(0,0,0,0.15),
+   0px 12px 10px -10px rgba(0,0,0,0.5);
+   border: 1px solid rgba(0,0,0,0.01);
+   transform: translate(2px);
+   transform: scale(0.95);
+}
+
+// --------- Page: Accueil --------
+.accueil{
+    border: 1px solid aqua;
+    position: relative;
+    img{
+    display: block;
+    margin: auto; 
+    padding: auto;
+    width:45vw;
+    margin-top: 22vh;
+  
+    }
+    .titre-developper{
+       
+        position: absolute;
+        width: 28%;
+        top: 35%;
+        left:2.6%;   
+    }
+    .titre-graphiste{
+        position: absolute;
+        width: 21%;
+        top: 35%;
+        right: 16%; 
+           }
+}
+
+h1{
+    font-size: 60px;
+    text-align: right;
+        
+}
+ // Animation images :
+ .picture-curtain {
+    position: relative;
+    margin: 0 auto;
+    width: 600px;
+    height: 500px;
+    overflow: hidden;
+  
+    div {
+      position: absolute;
+    }
+  
+    .foreground-picture-container {
+      width: 50%;
+      overflow: hidden;
+    }
+  }
+
+
+ /*.containerImg{
+     z-index: 90;
+     position: absolute;
+     width: 40vw;
+     height: 50vh;
+     overflow: hidden;
+     .slider{
+         position: relative;
+         top: 0;
+         left: 0;
+         width: 100%;
+         height: 100%;
+         .slider1{
+             background: url(./static/colibrisolo2.jpg) no-repeat;
+             background-size:cover ;
+             background-attachment:fixed ;
+             background-position: center;
+         }
+
+         .slider2{
+            background: url(./static/pissenlit.jpg) no-repeat;
+            background-size:cover ;
+            background-attachment:fixed ;
+            background-position: center;
+            left:50%;
+        }
+     }
+ }
+
+ 
+*/
+
+
+/* .graphiste{
+   position: absolute;
+    transform: translate(-50%,50%);
+    top:50%;
+    left:70%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 100px;
+    color: #e0e5eb;
+    text-shadow:
+    -8px -8px 12px rgba(255,255,255,0.4),
+    8px 8px 12px rgba(0,0,0,0.09);
+  */
+
+
+
+    /*position: absolute;
+    transform: translate(-50%,50%);
+    top:60%;
+    left:70%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 100px;
+    color: #ecf0f3;
+    text-shadow:
+    -9px -9px 14px #ffffff,
+    9px 9px 14px #cbced1;*/
+
+
+
+   /* position: relative;
+    transform: translate(-50%,50%);
+    top:10%;
+    left:40%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 100px;
+    color: #fff;
+    text-shadow: -10px 10px 20px rgba(0,0,0,0.1),
+    -1px 1px 0px rgba(0,0,0,0.1);
+  
+}
+
+
+.graphiste:hover{
+    text-shadow: 1px -1px 0px rgba(0, 0, 0, 0.1);
+    color: peru;
+}*/
+// --------- Autre --------
+
+ 
+
+
+
+

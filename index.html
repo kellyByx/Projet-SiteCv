@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Empty parcel project</title>
+  </head>
+  <body>
+    <!--//////////// Menu fixe////////////////////-->
+    <div class="menu-fixe menu-haut">
+      <div class="liens-haut">
+        <div>Web Developper Junior</div>
+        <div class="lien-nom">Kelly Bruyninx</div>
+        <div>Graphiste</div>
+      </div>
+    </div>
+    <div class="menu-fixe menu-bas">
+      <div class="liens-bas">
+        <div class="boutton liens-horizontal">
+          <a href="#parcours">Parcours</a>
+        </div>
+        <div class="boutton liens-horizontal">
+          <a href="#accueil"> Logo </a>
+        </div>
+        <div class="boutton liens-horizontal">
+          <a href="#contact">Contact</a>
+        </div>
+      </div>
+    </div>
+    <div class="menu-fixe menu-gauche">
+      <div class="liens-gauche">
+        <div class="boutton liens-vertical">
+          <a href="#competence-web">Comptétences</a>
+        </div>
+        <div class="boutton liens-vertical">
+          <a href="#portfolio-web">Portefolio</a>
+        </div>
+      </div>
+    </div>
+    <div class="menu-fixe menu-droite">
+      <div class="liens-droite">
+        <div class="boutton liens-vertical">
+          <a href="#competence-graph">Comptétences</a>
+        </div>
+        <div class="boutton liens-vertical">
+          <a href="#portfolio-graph">Portefolio</a>
+        </div>
+      </div>
+    </div>
+    <!--/////////////// Site ////////////////////::-->
+    <div class="container-all">
+      <!--colonne pages a gauche-->
+      <div class="container-gauche">
+        <section
+          class="page web-developper-competence"
+          id="competence-web"
+        ></section>
+        <section
+          class="page web-developper-portfolio"
+          id="portfolio-web"
+        ></section>
+      </div>
+      <!--colonne pages au centre-->
+      <div class="container-central">
+        <section class="page accueil" id="acceuil">
+          <h1 class="titre-developper">Code</h1>
+          <h1 class="titre-graphiste">Graphisme</h1>
+          <!--Animation img-->
+          <div
+            class="picture-curtain"
+            onMouseEnter="curtainEffectHandler(event);"
+            onMouseMove="curtainEffectHandler(event);"
+            onMouseLeave="curtainEffectHandler(event);"
+          >
+            <div class="background-picture-container">
+              <img
+                class="background-picture"
+                src="https://picsum.photos/id/866/500/300"
+                alt="background picture"
+              />
+            </div>
+            <div class="foreground-picture-container">
+              <img
+                class="foreground-picture"
+                src="https://picsum.photos/id/1005/500/300"
+                alt="foreground picture"
+              />
+            </div>
+          </div>
+
+          <!--<img src="./static/colibrisolo2.jpg" alt="" />
+          <div class="containerImg">
+            <div class="slider slider1"></div>
+            <div class="slider slider2" id="slide"></div>
+          </div>-->
+        </section>
+        <section class="page parcour" id="parcours"></section>
+        <section class="page contact" id="contact"></section>
+      </div>
+      <!--colonne pages a droite-->
+      <div class="container-droit">
+        <section
+          class="page graphisme-competence"
+          id="competence-graph"
+        ></section>
+        <section
+          class="page graphisme-portfolio"
+          id="portfolio-graph"
+        ></section>
+      </div>
+    </div>
+    <script src="script.js"></script>
+    <script src="animation1.js"></script>
+  </body>
+</html>
