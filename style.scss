@@ -40,23 +40,14 @@ body{
     height: 100vh;
     width: 100vw;
     margin-bottom: 20%;
-    
+    background-color:#fff;
 }
 
-.parcour,
-.contact,
-.accueil{
-    background-color:#fff;
-   }
+.centrageTest{
+    padding:25%;
+    text-align: center;
+}
 
-   .graphisme-portfolio,
-   .graphisme-competence{
-    background-color: rgb(252, 169, 16);
-   }
-.web-developper-portfolio,
-.web-developper-competence{
-    background-color: rgb(27, 252, 252);
-   }
 
  //--------- Menu fixe --------
 .menu-fixe{
