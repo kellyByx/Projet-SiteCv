@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Empty parcel project</title>
+    <title>Site CV Bruyninx Kelly</title>
   </head>
   <body>
     <!--//////////// Menu fixe////////////////////-->
@@ -61,35 +61,34 @@
       <!--colonne pages au centre-->
       <div class="container-central">
         <section class="page accueil" id="acceuil">
-          <h1 class="titre-developper">Code</h1>
-          <h1 class="titre-graphiste">Graphisme</h1>
-          <!--Animation img-->
-          <div
-            class="picture-curtain"
-            onMouseEnter="curtainEffectHandler(event);"
-            onMouseMove="curtainEffectHandler(event);"
-            onMouseLeave="curtainEffectHandler(event);"
-          >
-            <div class="background-picture-container">
-              <img
-                class="background-picture"
-                src="./static/colibrisolo2.jpg"
-                alt="background picture"
-              />
+          <div class="container-accueil">
+            <h1 class="titre-developper">
+              <a href="#competence-web">Code</a>
+            </h1>
+            <!-- Animation img debut -->
+            <div class="bloc-animation">
+              <div class="picture-curtain">
+                <div class="background-picture-container">
+                  <img
+                    class="background-picture"
+                    src="./static/pissenlit.jpg"
+                    alt="background picture"
+                  />
+                </div>
+                <div class="foreground-picture-container">
+                  <img
+                    class="foreground-picture"
+                    src="./static/colibrisolo2.jpg"
+                    alt="foreground picture"
+                  />
+                </div>
+              </div>
             </div>
-            <div class="foreground-picture-container">
-              <img
-                class="foreground-picture"
-                src="./static/pissenlit.jpg"
-                alt="foreground picture"
-              />
-            </div>
+            <!--Animation img fin -->
+            <h1 class="titre-graphiste">
+              <a href="#competence-graph">Graphisme</a>
+            </h1>
           </div>
-          <!--<img src="./static/colibrisolo2.jpg" alt="" />
-          <div class="containerImg">
-            <div class="slider slider1"></div>
-            <div class="slider slider2" id="slide"></div>
-          </div>-->
         </section>
         <section class="page parcour" id="parcours">
           <p class="centrageTest">Parcours</p>
@@ -103,13 +102,40 @@
         <section class="page graphisme-competence" id="competence-graph">
           <p class="centrageTest">Competences graphiste</p>
         </section>
+        <!--portefolio graphisme-->
         <section class="page graphisme-portfolio" id="portfolio-graph">
-          <p class="centrageTest">Portefolio graphiste</p>
+          <div class="themes">
+            <div>
+              <ul>
+                <li><a href="nav-galerie">Typographies</a></li>
+                <li><a href="nav-galerie">Logos</a></li>
+                <li><a href="nav-galerie">Affiches</a></li>
+                <li><a href="nav-galerie">TFE</a></li>
+                <li><a href="nav-galerie">Photos</a></li>
+                <li><a href="nav-galerie">Autres</a></li>
+              </ul>
+            </div>
+            <div class="texte-themes">
+              <h3>Titre</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut
+                fugiat officia voluptatibus odio asperiores maiores minus, ut
+                tenetur eveniet libero quae quibusdam necessitatibus saepe
+                laboriosam quos numquam delectus. Odio, veritatis!
+              </p>
+            </div>
+          </div>
+          <div class="col">
+            <div class="gallery-box">
+              <img src="./static/img1.jpg" id="gallery" />
+            </div>
+            <div class="gallery-box">
+              <img src="./static/img2.jpg" id="gallery" />
+            </div>
+          </div>
         </section>
       </div>
     </div>
     <script src="script.js"></script>
-    <!-- test animation img dans fichier séparé -->
-    <script src="animation1.js"></script>
   </body>
 </html>

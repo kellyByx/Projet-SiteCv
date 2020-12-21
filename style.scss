@@ -1,7 +1,6 @@
 @import "@fortawesome/fontawesome-free/css/all.css";
 *{
     box-sizing: border-box;
-   // overflow: hidden;
 }
 
 html,
@@ -11,8 +10,14 @@ body{
     font-size: 16px;
     font-family: Arial, Helvetica, sans-serif;
     background-color: rgb(217, 214, 214);
+    
 }
 
+body{
+    overflow: hidden;
+
+
+}
 .container-all{
     display: flex;
     align-items: center;
@@ -47,7 +52,6 @@ body{
     padding:25%;
     text-align: center;
 }
-
 
  //--------- Menu fixe --------
 .menu-fixe{
@@ -167,87 +171,68 @@ a:hover{
 
 // --------- Page: Accueil --------
 .accueil{
-    
-    position: relative;
-    img{
-    display: block;
-    margin: auto; 
-    padding: auto;
-    width:45vw;
-    margin-top: 22vh;
-  
-    }
-    .titre-developper{
-       
-        position: absolute;
-        width: 28%;
-        top: 35%;
-        left:2.6%;   
-    }
-    .titre-graphiste{
-        position: absolute;
-        width: 21%;
-        top: 35%;
-        right: 16%; 
-           }
-}
+     position: relative;
 
-h1{
-    font-size: 60px;
-    text-align: right;
-    
-        
-}
- // Animation images :
- .picture-curtain {
-    position: relative;
-    margin: 0 auto;
-    width: 600px;
-    height: 500px;
-    overflow: hidden;
-  
-    div {
-      position: absolute;
-    }
-  
-    .foreground-picture-container {
-      width: 50%;
-      overflow: hidden;
-    }
-  }
-
-
- /*.containerImg{
-     z-index: 90;
-     position: absolute;
-     width: 40vw;
-     height: 50vh;
-     overflow: hidden;
-     .slider{
-         position: relative;
-         top: 0;
-         left: 0;
-         width: 100%;
-         height: 100%;
-         .slider1{
-             background: url(./static/colibrisolo2.jpg) no-repeat;
-             background-size:cover ;
-             background-attachment:fixed ;
-             background-position: center;
-         }
-
-         .slider2{
-            background: url(./static/pissenlit.jpg) no-repeat;
-            background-size:cover ;
-            background-attachment:fixed ;
-            background-position: center;
-            left:50%;
+     .container-accueil{
+        border: 1px solid red;
+        display: flex;
+        justify-content:  space-around;
+        width: 75%;
+        height: 90%;
+        margin-left: 12.5%;
+        margin-right: 12.5%;
+        h1{
+            font-size: 45px;
+            text-align: right;      
         }
-     }
- }
+       .titre-developper,         
+        .titre-graphiste{
+          margin-top:30%;
+          //border: 2px solid orchid;
+          height: 10%;
+        }
+        
+    }
+}
 
- 
-*/
+.bloc-animation{
+    border:2px solid orange;
+    width: 55%;
+   
+    // Animation images :
+    .picture-curtain {
+        position: absolute;
+        margin: 0 auto;
+        top:50%;
+        left:50%;
+        transform: translate(-50%,-50%);
+        width: 41%;
+        height: 50%;
+        overflow: hidden;
+        //border: 1px solid green;
+        
+    
+        div {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        //border: 1px solid blue;
+        img{
+            height: 100%;
+            display: block;
+        }
+        }
+    
+        .foreground-picture-container {
+        width: 49%;
+        overflow: hidden;
+        // border: 3px solid purple;
+        }
+    }
+}
+
+  
+
 
 
 /* .graphiste{
@@ -299,6 +284,55 @@ h1{
 
  
 
+//-------------Page portefolio-graphisme-------------
+.graphisme-portfolio{
+    padding: 7%;
+    display: flex;
+    ul{
+        list-style-type: none;
+        text-align: left;
+        li{
+            font-size: 40px;
+            margin-top : 1%;
+            font-weight: bold;
+        }
+    }
+    a{
+        color:#e7c82f;
+        text-decoration: none;
+        &:hover{
+            //text-decoration: underline;
+            color: white;
+            -webkit-text-stroke: 2px #e7c82f;
+        }
+    }
+    .gallery-box{
+        max-width:400px;
+        //border:2px solid rgb(210, 155, 247);
+        //position:relative;
+        margin:auto;
+        img{
+            width: 100%;
+            border:10px solid rgba(165, 149, 149, 0.2);
+            box-sizing: border-box;
+    
+        }
+    } 
 
+}
+.col{
+    width: 60%;
+    display: flex;
+    //border:2px solid rgb(118, 189, 231)
+}
+.themes{
+    width: 35%;
+    border:2px solid rgb(210, 155, 247);
+    margin-right: 5%;
+}
+.texte-themes{
+    margin-top: 20%;
+ 
+     border:2px solid rgb(118, 189, 231)
 
-
+}
