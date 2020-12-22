@@ -14,10 +14,9 @@ body{
 }
 
 body{
-    overflow: hidden;
-
-
+   overflow: hidden;
 }
+//body::-webkit-scrollbar {  display: none; }
 .container-all{
     display: flex;
     align-items: center;
@@ -174,7 +173,7 @@ a:hover{
      position: relative;
 
      .container-accueil{
-        border: 1px solid red;
+        //border: 1px solid red;//=> soucis ---------
         display: flex;
         justify-content:  space-around;
         width: 75%;
@@ -196,7 +195,7 @@ a:hover{
 }
 
 .bloc-animation{
-    border:2px solid orange;
+    //border:2px solid orange; //=> soucis ---------
     width: 55%;
    
     // Animation images :
@@ -286,7 +285,7 @@ a:hover{
 
 //-------------Page portefolio-graphisme-------------
 .graphisme-portfolio{
-    padding: 7%;
+    padding: 8%;
     display: flex;
     ul{
         list-style-type: none;
@@ -307,7 +306,7 @@ a:hover{
         }
     }
     .gallery-box{
-        max-width:400px;
+        max-width:300px;
         //border:2px solid rgb(210, 155, 247);
         //position:relative;
         margin:auto;
@@ -321,18 +320,22 @@ a:hover{
 
 }
 .col{
-    width: 60%;
+    width: 55%;
     display: flex;
     //border:2px solid rgb(118, 189, 231)
 }
 .themes{
-    width: 35%;
-    border:2px solid rgb(210, 155, 247);
-    margin-right: 5%;
+    width: 42%;
+   // border:2px solid rgb(210, 155, 247);
+    margin-right: 2%;
+    margin-top:-1%;
+    
 }
 .texte-themes{
-    margin-top: 20%;
- 
-     border:2px solid rgb(118, 189, 231)
+    margin-top: 10%;
+     width: 50%;
+     margin-left: 50%;
+   //  border:2px solid rgb(118, 189, 231)
+   text-align: justify;
 
 }
