@@ -27,6 +27,7 @@ body{
     margin-right: 10%;
 }
 
+
 .container-gauche,
 .container-central,
 .container-droit{
@@ -48,7 +49,7 @@ body{
 }
 
 .centrageTest{
-    padding:15%;
+    padding:11%;
 }
 
  //--------- Menu fixe --------
@@ -80,7 +81,7 @@ body{
 .menu-gauche{
     z-index: 80;
     left:0;
-    width: 3.6vw;
+    width: 4vw;
     height: 100vh;
     writing-mode: vertical-rl;
     text-orientation:mixed;
@@ -97,7 +98,7 @@ body{
 .menu-droite{
     z-index: 80;
     right: 0;
-    width: 3.6vw;
+    width: 4vw;
     height: 100vh;
     writing-mode: vertical-rl;
     text-orientation: mixed;
@@ -114,7 +115,7 @@ body{
     z-index: 100;
     bottom:0;
     width: 100vw;
-    height: 7vh;
+    height: 8vh;
    
     .liens-bas{
         display: flex;
@@ -151,7 +152,7 @@ a:hover{
     border-radius: 8px;
     text-align: center;
     background-color:#e3edf7; //#ecf1f3
-    box-shadow: 6px 6px 10px -1px rgba(0,0,0,0.15), 6px 6px 10px -1px rgba(255,255,255,0.7);
+    box-shadow: 6px 6px 10px -1px rgba(0,0,0,0.15), -6px -6px 10px -1px rgba(255, 255, 255, 0.814);
     border: 1px solid rgba(0,0,0,0);
     transition: transform 0.4s;
 }
@@ -229,59 +230,6 @@ a:hover{
     }
 }
 
-  
-
-
-
-/* .graphiste{
-   position: absolute;
-    transform: translate(-50%,50%);
-    top:50%;
-    left:70%;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 100px;
-    color: #e0e5eb;
-    text-shadow:
-    -8px -8px 12px rgba(255,255,255,0.4),
-    8px 8px 12px rgba(0,0,0,0.09);
-  */
-
-
-
-    /*position: absolute;
-    transform: translate(-50%,50%);
-    top:60%;
-    left:70%;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 100px;
-    color: #ecf0f3;
-    text-shadow:
-    -9px -9px 14px #ffffff,
-    9px 9px 14px #cbced1;*/
-
-
-
-   /* position: relative;
-    transform: translate(-50%,50%);
-    top:10%;
-    left:40%;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 100px;
-    color: #fff;
-    text-shadow: -10px 10px 20px rgba(0,0,0,0.1),
-    -1px 1px 0px rgba(0,0,0,0.1);
-  
-}
-
-
-.graphiste:hover{
-    text-shadow: 1px -1px 0px rgba(0, 0, 0, 0.1);
-    color: peru;
-}*/
-// --------- Autre --------
-
- 
-
 //-------------Page portefolio-graphisme-------------
 .graphisme-portfolio{
     padding: 8%;
@@ -342,3 +290,137 @@ a:hover{
    text-align: justify;
 
 }
+
+//  Page compétence Web Dev
+
+.web-developper-competence{
+    padding:4%;
+}
+
+.categorie-competence{
+    margin-top: 8vh;;
+    margin-bottom: 8vh;;
+    ul{
+        display: flex;
+        justify-content: space-around;
+        list-style-type: none;
+        //margin-left: -2.8vw;
+     }
+}
+.contour-clavier{
+    margin-left: 8vw;
+    //margin-top: 3vh;
+    height: 58vh;
+    width: 76vw;
+    padding-top:3%;
+    padding-left:3% ;
+    border-radius: 10px;
+    background: #dde1e7;
+}    
+
+.clavier{
+   
+    height: 47vh;
+    width: 70vw;
+    
+    flex-wrap: wrap;
+    padding: 1%;
+    box-sizing: border-box;
+
+    background: #dde1e7;
+    border-radius: 10px;
+    box-shadow: -5px -5px 5px #ffffff73,
+                7px 7px 5px rgba(94,104,121,0.200);
+
+    ul{
+       display: flex;
+       justify-content: space-between;
+       list-style-type: none;
+       margin-left: -2vw;
+    }
+    
+    li{
+     
+        font-size: 0.8rem;
+        //border: 1px solid greenyellow;
+        padding:1%;
+        background: #dde1e7;
+        border-radius: 5px;
+        box-shadow: -5px -5px 5px #ffffff73,
+                    7px 7px 5px rgba(94,104,121,0.200);
+        color: grey;
+        
+    }
+
+    .colonne-clavier{
+        //border: 1px solid red;
+        height: 4vh;
+        box-sizing: border-box;
+    }
+
+    .haut-clavier{
+       border: 1px solid #dde1e7 ;
+        height: 5vh;
+        text-align: center;
+    }
+
+    .principal-clavier{
+        //border: 1px solid red;
+        display: flex;
+        justify-content: space-between;
+        margin-top: 2vh;
+        height: 36vh;
+
+        //box-sizing: border-box;
+
+        .gauche-clavier{
+            //border: 1px solid aqua;
+            height: 36vh;
+            width: 48vw;
+    
+        }
+        .droit-clavier{
+            //border: 1px solid aqua;
+            width: 19vw;
+            
+            .haut-pad{
+                //border: 1px solid rgb(210, 155, 247);
+                height: 5vh;
+                margin-bottom: 1vh;
+                li{
+     
+                    font-size: 0.8rem;
+                    //border: 1px solid greenyellow;
+                    padding:2%;
+                    background: #dde1e7;
+                    border-radius: 5px;
+                    box-shadow: -5px -5px 5px #ffffff73,
+                                7px 7px 5px rgba(94,104,121,0.200);
+                    color: grey;
+                    
+                }
+            }
+            
+            .pad-clavier{
+                //border: 1px solid rgb(210, 155, 247);
+                height: 28vh;
+                width: 18.5vw;
+                background: #dde1e7;
+                border-radius: 5px;
+                box-shadow: -5px -5px 5px #ffffff73,
+                            7px 7px 5px rgba(94,104,121,0.200);
+                margin-top: 1.5vh;
+               
+               
+            
+            }
+        }
+        
+    }
+}
+
+
+
+
+
+
