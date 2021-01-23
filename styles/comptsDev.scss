@@ -1,0 +1,182 @@
+
+.web-developper-competence{
+    padding:4%;
+}
+
+.categorie-competence{
+    margin: 8vh auto 5vh auto;;
+    font-size: 1rem;
+    display: flex;
+    justify-content: space-around;
+    width: 75vw;
+    
+
+        .fond-cmpts{
+            background-color:#dde1e7; 
+            border-radius: 60px;
+            box-shadow: inset -2px -2px 2px #ffffff73, inset 3px 3px 1px rgba(94,104,121,0.200);
+            padding:0.5rem; 
+           
+            .contenu-cmpts-1{
+            background: white;
+            border-radius: 40px;
+            padding:1vh 1vw 1vh 1vw;
+            box-shadow: -5px -5px 5px #ffffff73,//rem
+            6px 6px 5px rgba(94,104,121,0.200);
+            }
+            
+        }
+        .fond-cmpts:active{
+           // color:white;
+           color:rgb(210, 155, 247);
+            background-color:rgb(210, 155, 247);
+           // box-shadow: 0em -0.1em 0.2em aqua, 0.1em 0.1em 0.2em aqua, 0.1em 0.1em 0.2em aqua;
+           .contenu-cmpts-1{
+            box-shadow: inset -5px -5px 5px #ffffff73,
+            inset  7px 7px 5px rgba(94,104,121,0.200);
+            }  
+        }
+        .fond-cmpts:hover{
+            // color:white;
+            color:rgb(210, 155, 247);
+             background-color:rgb(210, 155, 247);
+            // box-shadow: 0em -0.1em 0.2em aqua, 0.1em 0.1em 0.2em aqua, 0.1em 0.1em 0.2em aqua;
+            .contenu-cmpts-1{
+             box-shadow: inset -5px -5px 5px #ffffff73,
+             inset  7px 7px 5px rgba(94,104,121,0.200);
+             }  
+         }
+  
+}
+.contour-clavier{
+   
+    margin: auto;
+    height: 58vh;
+    width: 76vw;
+    padding:3%;//rem
+    border-radius: 10px;
+    background: #dde1e7;
+    box-shadow: inset -5px -5px 5px #ffffff73, inset 7px 7px 5px rgba(94,104,121,0.200);
+}    
+
+.clavier{
+    h3{
+        font-size: 2.2rem;
+        color:white;
+        padding: 0;
+        margin:0;
+        text-shadow: -2px -2px 2px #ffffff73,
+        3px 3px 2px rgba(94,104,121,0.200);;
+    }
+   
+    height: 47vh;
+    width: 70vw;
+    
+   // flex-wrap: wrap;
+    padding: 1%;//rem
+    box-sizing: border-box;
+
+    background: #dde1e7;
+    border-radius: 10px;
+    box-shadow: -5px -5px 5px #ffffff73,
+                7px 7px 5px rgba(94,104,121,0.200);
+
+    
+    ul{
+       display: flex;
+       justify-content: space-between;
+       list-style-type: none;
+      
+    }
+    
+    li{
+     
+        font-size: 0.8rem;
+        //border: 1px solid greenyellow;
+        padding:1%;
+        background: #dde1e7;
+        border-radius: 5px;
+        box-shadow: -5px -5px 5px #ffffff73,
+                    7px 7px 5px rgba(94,104,121,0.200);
+        color: grey;
+        
+    }
+
+    .colonne-clavier{
+        //border: 1px solid red;
+        height: 4vh;
+        box-sizing: border-box;
+    }
+
+    .haut-clavier{
+       border: 1px solid #dde1e7 ;
+        height: 5vh;
+        text-align: center;
+    }
+
+    .principal-clavier{
+        //border: 1px solid red;
+        display: flex;
+        justify-content: space-between;
+        margin-top: 1vh;
+        height: 36vh;
+        margin-right: 0.5vw;
+
+
+        //box-sizing: border-box;
+
+        .gauche-clavier{
+            //border: 1px solid aqua;
+            height: 36vh;
+            width: 48vw;
+            ul{
+                margin-left: -2vw;
+            }
+          
+    
+        }
+        .droit-clavier{
+            //border: 1px solid aqua;
+            width: 18.5vw;
+            
+            .haut-pad{
+                //border: 1px solid rgb(210, 155, 247);
+                height: 5vh;
+                margin-bottom: 1vh;
+               ul{
+                margin-left: -2.7vw;
+                
+                    li{
+        
+                        font-size: 0.8rem;
+                        //border: 1px solid greenyellow;
+                        padding:2%;
+                        background: #dde1e7;
+                        border-radius: 5px;
+                        box-shadow: -5px -5px 5px #ffffff73,
+                                    7px 7px 5px rgba(94,104,121,0.200);
+                        color: grey;
+                        
+                       
+                    }
+                 
+                 }
+            }
+            
+            .pad-clavier{
+                //border: 1px solid rgb(210, 155, 247);
+                height: 28vh;
+                width: 18.5vw;
+                background: #dde1e7;
+                border-radius: 5px;
+                box-shadow: inset -5px -5px 5px #ffffff73,
+                           inset  7px 7px 5px rgba(94,104,121,0.200);
+                margin-top: 1.5vh;
+               
+               
+            
+            }
+        }
+        
+    }
+}

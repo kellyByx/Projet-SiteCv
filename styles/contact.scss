@@ -1,0 +1,111 @@
+.pgContact{
+    padding: 5rem  4.6rem 5rem 5.5rem;
+    
+    .interContact{
+        background-color:#e3edf7;
+        border-radius:10px ;
+        width: 88.5vw;
+        height: 78vh;
+        padding:6rem;
+        box-shadow: inset -4px -4px 5px #ffffff73, inset  7px 7px 5px rgba(94,104,121,0.200);
+
+        .container-pg-contact{
+            display: flex;
+            justify-content: space-between;
+           // background-color:#dde1e7;
+           
+            .formulaire{
+                //border: 1px solid red;
+                border-radius:10px ;
+                width: 30vw;;
+                padding: 2rem;
+                box-shadow: -5px -5px 5px #ffffff73,6px 6px 5px rgba(94,104,121,0.200);
+                
+                h3{
+                  text-align: center;
+                }
+        
+                .col{
+                    width: 100%;
+                    padding:  0.5srem;
+                    margin: 30px 0 10px;
+                    //border: 1px solid red;
+                
+                    .texte{
+                    margin-bottom: 1rem;
+                    }
+                    input{
+                        border :none;
+                    }
+
+                    a{
+                        text-decoration: none ;
+                        color: grey;
+                    }
+                }
+            }
+            .containerDroit{
+               // border: 1px solid red;
+                width: 40vw;
+                padding:3rem;
+                
+            .box-info{
+                border-radius: 15px;
+                box-shadow:  -5px -5px 5px #ffffff73,
+                inset -5px -5px 5px #ffffff73,
+                7px 7px 5px rgba(94,104,121,0.200), 
+                inset 7px 7px 5px rgba(94,104,121,0.200);
+                height: 20vh;
+                padding: 1rem;
+                margin-bottom: 4vh;
+
+                .infos{
+                    //border: 1px solid red;
+                    width: 31.5vw;
+                    height: 16vh;
+                    background-color: white;
+                    border-radius:10px ;
+                    
+                }
+            }
+              
+            .box-liens{
+                        
+               width: 32rem;
+               height: 19vh;
+               padding: 1.5rem  4rem;
+               border-radius: 15px;
+               box-shadow:  -5px -5px 5px #ffffff73, inset -5px -5px 5px #ffffff73, 7px 7px 5px rgba(94,104,121,0.200), inset 7px 7px 5px rgba(94,104,121,0.200);
+                    
+               .liens{
+                display: flex;
+                width: 24vw;
+                height: 14vh;
+                //border: 1px solid red;
+                justify-content: space-between;
+                font-size: 3.5rem;
+    
+                    img, i{
+                    width: 2.8vw;
+                    }
+
+                    .btn-lien{
+                            border: 1px solid red;
+                            padding:1rem;
+                            width: 5.5vw;
+                           
+
+                                        
+                        }
+                    }
+                }
+                
+            }
+        }
+        
+    }
+
+}
+
+
+

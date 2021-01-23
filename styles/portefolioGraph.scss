@@ -1,0 +1,59 @@
+.graphisme-portfolio{
+    padding: 8%;
+    display: flex;
+    ul{
+        list-style-type: none;
+        text-align: left;
+        font-weight: bold;
+        li{
+            font-size: 40px;
+            margin-top : 1%;
+        }
+    }
+    a{
+        color:#e7c82f;
+        text-decoration: none;
+       
+
+        &:hover{
+            //text-decoration: underline;
+            color: white;
+            -webkit-text-stroke: 2px #e7c82f; // #eebf58
+            //-webkit-text-fill-color: transparent;
+           // color:transparent;
+        }
+    }
+    .gallery-box{
+        max-width:300px;
+        //border:2px solid rgb(210, 155, 247);
+        //position:relative;
+        margin:auto;
+        img{
+            width: 100%;
+            border:10px solid rgba(165, 149, 149, 0.2);
+            box-sizing: border-box;
+    
+        }
+    } 
+
+}
+.col{
+    width: 55%;
+    display: flex;
+    //border:2px solid rgb(118, 189, 231)
+}
+.themes{
+    width: 42%;
+   // border:2px solid rgb(210, 155, 247);
+    margin-right: 2%;
+    margin-top:-1%;
+    
+}
+.texte-themes{
+    margin-top: 10%;
+     width: 50%;
+     margin-left: 50%;
+   //  border:2px solid rgb(118, 189, 231)
+   text-align: justify;
+
+}

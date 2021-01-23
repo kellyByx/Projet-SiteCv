@@ -7,43 +7,45 @@
   </head>
   <body>
     <!--//////////// Menu fixe////////////////////-->
-    <div class="menu-fixe menu-haut">
-      <div class="liens-haut">
-        <div>Web Developper Junior</div>
-        <div class="lien-nom">Kelly Bruyninx</div>
-        <div>Graphiste</div>
-      </div>
-    </div>
-    <div class="menu-fixe menu-bas">
-      <div class="liens-bas">
-        <div class="boutton liens-horizontal">
-          <a href="#parcours">Parcours</a>
-        </div>
-        <div class="boutton liens-horizontal">
-          <a href="#accueil"> Logo </a>
-        </div>
-        <div class="boutton liens-horizontal">
-          <a href="#contact">Contact</a>
+    <div class="menu">
+      <div class="menu-fixe menu-haut">
+        <div class="liens-haut">
+          <div>Web Developper Junior</div>
+          <div class="lien-nom">Kelly Bruyninx</div>
+          <div>Graphiste</div>
         </div>
       </div>
-    </div>
-    <div class="menu-fixe menu-gauche">
-      <div class="liens-gauche">
-        <div class="boutton liens-vertical">
-          <a href="#competence-web">Comptétences</a>
-        </div>
-        <div class="boutton liens-vertical">
-          <a href="#portfolio-web">Portefolio</a>
+      <div class="menu-fixe menu-bas">
+        <div class="liens-bas">
+          <div class="boutton liens-horizontal">
+            <a href="#parcours">Parcours</a>
+          </div>
+          <div class="boutton liens-horizontal">
+            <a href="#accueil"> Logo </a>
+          </div>
+          <div class="boutton liens-horizontal">
+            <a href="#contact">Contact</a>
+          </div>
         </div>
       </div>
-    </div>
-    <div class="menu-fixe menu-droite">
-      <div class="liens-droite">
-        <div class="boutton liens-vertical">
-          <a href="#competence-graph">Comptétences</a>
+      <div class="menu-fixe menu-gauche">
+        <div class="liens-gauche">
+          <div class="boutton liens-vertical">
+            <a href="#competence-web">Comptétences</a>
+          </div>
+          <div class="boutton liens-vertical">
+            <a href="#portfolio-web">Portefolio</a>
+          </div>
         </div>
-        <div class="boutton liens-vertical">
-          <a href="#portfolio-graph">Portefolio</a>
+      </div>
+      <div class="menu-fixe menu-droite">
+        <div class="liens-droite">
+          <div class="boutton liens-vertical">
+            <a href="#competence-graph">Comptétences</a>
+          </div>
+          <div class="boutton liens-vertical">
+            <a href="#portfolio-graph">Portefolio</a>
+          </div>
         </div>
       </div>
     </div>
@@ -159,7 +161,6 @@
             </div>
           </div>
         </section>
-
         <section class="page web-developper-portfolio" id="portfolio-web">
           <p class="centrageTest">Portefolio web developer</p>
         </section>
@@ -253,13 +254,50 @@
             </p>
           </div>
         </section>
-        <section class="page contact" id="contact">
-          <div class="centrageTest">
-            <p>
-              GitHub
-              <br />
-              LinkedIn
-            </p>
+        <section class="page pgContact" id="contact">
+          <div class="interContact">
+            <div class="container-pg-contact">
+              <div class="formulaire">
+                <h3>Contact :</h3>
+                <div class="col">
+                  <div class="inputBox">
+                    <div class="text">Nom</div>
+                    <input type="text" name="" required="required" />
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="inputBox">
+                    <div class="text">Mail</div>
+                    <input type="text" name="" required="required" />
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="inputBox">
+                    <div class="text">Message</div>
+                    <textarea required="required"></textarea>
+                  </div>
+                </div>
+                <div class="col">
+                  <input type="submit" value="Send" />
+                </div>
+              </div>
+              <div class="containerDroit">
+                <div class="box-info">
+                  <div class="infos"></div>
+                </div>
+                <div class="box-liens">
+                  <div class="liens">
+                    <div class="btn-lien"><i class="fab fa-github"></i></div>
+                    <div class="btn-lien"><i class="fab fa-linkedin"></i></div>
+                    <div>
+                      <div class="btn-lien">
+                        <img src="./static/cv.png" alt="logo cv" />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </section>
       </div>

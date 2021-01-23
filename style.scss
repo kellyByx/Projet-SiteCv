@@ -1,4 +1,15 @@
+/* dependencies */
 @import "@fortawesome/fontawesome-free/css/all.css";
+
+/* local imports */
+@import "./styles/accueil.scss";
+@import "./styles/comptsDev.scss";
+@import "./styles/portefolioDev.scss";
+@import "./styles/comptsGraph.scss";
+@import "./styles/portefolioGraph.scss";
+@import "./styles/parcours.scss";
+@import "./styles/contact.scss";
+
 *{
     box-sizing: border-box;
 }
@@ -17,6 +28,7 @@ body{
    overflow: hidden;
 }
 //body::-webkit-scrollbar {  display: none; }
+
 .container-all{
     display: flex;
     align-items: center;
@@ -137,7 +149,7 @@ a:hover{
 }
 
 .liens-horizontal{
-    height:40px;
+    height: 40px;
     width:  11%;
     padding: 1%;
 }
@@ -149,12 +161,12 @@ a:hover{
 }
 .boutton{
    margin: 0 1%;
-    border-radius: 8px;
-    text-align: center;
-    background-color:#e3edf7; //#ecf1f3
-    box-shadow: 6px 6px 8px -1px rgba(0,0,0,0.15), -6px -6px 8px -1px rgba(255, 255, 255, 0.814);
-    border: 1px solid rgba(0,0,0,0);
-    transition: transform 0.4s;
+   border-radius: 8px;
+   text-align: center;
+   background-color:#e3edf7; //#ecf1f3
+   box-shadow: 6px 6px 8px -1px rgba(0,0,0,0.15), -6px -6px 8px -1px rgba(255, 255, 255, 0.814);
+   border: 1px solid rgba(0,0,0,0);
+   transition: transform 0.4s;
 }
 
 .boutton:hover{
@@ -167,307 +179,3 @@ a:hover{
    transform: translate(2px);
    transform: scale(0.95);
 }
-
-// --------- Page: Accueil --------
-.accueil{
-     position: relative;
-
-     .container-accueil{
-        //border: 1px solid red;//=> soucis ---------
-        display: flex;
-        justify-content:  space-around;
-        width: 75%;
-        height: 90%;
-        margin-left: 12.5%;
-        margin-right: 12.5%;
-        h1{
-            font-size: 45px;
-            text-align: right;      
-        }
-       .titre-developper,         
-        .titre-graphiste{
-          margin-top:30%;
-          //border: 2px solid orchid;
-          height: 10%;
-        }
-        
-    }
-}
-
-.bloc-animation{
-    //border:2px solid orange; //=> soucis ---------
-    width: 55%;
-   
-    // Animation images :
-    .picture-curtain {
-        position: absolute;
-        margin: 0 auto;
-        top:50%;
-        left:50%;
-        transform: translate(-50%,-50%);
-        width: 41%;
-        height: 50%;
-        overflow: hidden;
-        //border: 1px solid green;
-        
-    
-        div {
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        //border: 1px solid blue;
-        img{
-            height: 100%;
-            display: block;
-        }
-        }
-    
-        .foreground-picture-container {
-        width: 49%;
-        overflow: hidden;
-        // border: 3px solid purple;
-        }
-    }
-}
-
-//-------------Page portefolio-graphisme-------------
-.graphisme-portfolio{
-    padding: 8%;
-    display: flex;
-    ul{
-        list-style-type: none;
-        text-align: left;
-        font-weight: bold;
-        li{
-            font-size: 40px;
-            margin-top : 1%;
-        }
-    }
-    a{
-        color:#e7c82f;
-        text-decoration: none;
-       
-
-        &:hover{
-            //text-decoration: underline;
-            color: white;
-            -webkit-text-stroke: 2px #e7c82f; // #eebf58
-            //-webkit-text-fill-color: transparent;
-           // color:transparent;
-        }
-    }
-    .gallery-box{
-        max-width:300px;
-        //border:2px solid rgb(210, 155, 247);
-        //position:relative;
-        margin:auto;
-        img{
-            width: 100%;
-            border:10px solid rgba(165, 149, 149, 0.2);
-            box-sizing: border-box;
-    
-        }
-    } 
-
-}
-.col{
-    width: 55%;
-    display: flex;
-    //border:2px solid rgb(118, 189, 231)
-}
-.themes{
-    width: 42%;
-   // border:2px solid rgb(210, 155, 247);
-    margin-right: 2%;
-    margin-top:-1%;
-    
-}
-.texte-themes{
-    margin-top: 10%;
-     width: 50%;
-     margin-left: 50%;
-   //  border:2px solid rgb(118, 189, 231)
-   text-align: justify;
-
-}
-
-//  ------------- Page compétence Web Dev -------------
-
-
-.web-developper-competence{
-    padding:4%;
-}
-
-.categorie-competence{
-    margin: 8vh auto 5vh auto;;
-    font-size: 1rem;
-    display: flex;
-    justify-content: space-around;
-    width: 75vw;
-    
-
-        .fond-cmpts{
-            background-color:#dde1e7; 
-            border-radius: 60px;
-            box-shadow: inset -2px -2px 2px #ffffff73, inset 3px 3px 1px rgba(94,104,121,0.200);
-            padding:0.5rem; 
-           
-            .contenu-cmpts-1{
-            background: white;
-            border-radius: 40px;
-            padding:1vh 1vw 1vh 1vw;
-            box-shadow: -5px -5px 5px #ffffff73,//rem
-            6px 6px 5px rgba(94,104,121,0.200);
-            }
-            
-        }
-        .fond-cmpts:active{
-           // color:white;
-           color:rgb(210, 155, 247);
-            background-color:rgb(210, 155, 247);
-           // box-shadow: 0em -0.1em 0.2em aqua, 0.1em 0.1em 0.2em aqua, 0.1em 0.1em 0.2em aqua;
-           .contenu-cmpts-1{
-            box-shadow: inset -5px -5px 5px #ffffff73,
-            inset  7px 7px 5px rgba(94,104,121,0.200);
-            }
-        }
-  
-}
-.contour-clavier{
-   
-    margin: auto;
-    height: 58vh;
-    width: 76vw;
-    padding:3%;//rem
-    border-radius: 10px;
-    background: #dde1e7;
-    box-shadow: inset -5px -5px 5px #ffffff73, inset 7px 7px 5px rgba(94,104,121,0.200);
-}    
-
-.clavier{
-    h3{
-        font-size: 2.2rem;
-        color:white;
-        padding: 0;
-        margin:0;
-        text-shadow: -2px -2px 2px #ffffff73,
-        3px 3px 2px rgba(94,104,121,0.200);;
-    }
-   
-    height: 47vh;
-    width: 70vw;
-    
-    flex-wrap: wrap;
-    padding: 1%;//rem
-    box-sizing: border-box;
-
-    background: #dde1e7;
-    border-radius: 10px;
-    box-shadow: -5px -5px 5px #ffffff73,
-                7px 7px 5px rgba(94,104,121,0.200);
-
-    
-    ul{
-       display: flex;
-       justify-content: space-between;
-       list-style-type: none;
-      
-    }
-    
-    li{
-     
-        font-size: 0.8rem;
-        //border: 1px solid greenyellow;
-        padding:1%;
-        background: #dde1e7;
-        border-radius: 5px;
-        box-shadow: -5px -5px 5px #ffffff73,
-                    7px 7px 5px rgba(94,104,121,0.200);
-        color: grey;
-        
-    }
-
-    .colonne-clavier{
-        //border: 1px solid red;
-        height: 4vh;
-        box-sizing: border-box;
-    }
-
-    .haut-clavier{
-       border: 1px solid #dde1e7 ;
-        height: 5vh;
-        text-align: center;
-    }
-
-    .principal-clavier{
-        //border: 1px solid red;
-        display: flex;
-        justify-content: space-between;
-        margin-top: 1vh;
-        height: 36vh;
-        margin-right: 0.5vw;
-
-
-        //box-sizing: border-box;
-
-        .gauche-clavier{
-            //border: 1px solid aqua;
-            height: 36vh;
-            width: 48vw;
-            ul{
-                margin-left: -2vw;
-            }
-          
-    
-        }
-        .droit-clavier{
-            //border: 1px solid aqua;
-            width: 18.5vw;
-            
-            .haut-pad{
-                //border: 1px solid rgb(210, 155, 247);
-                height: 5vh;
-                margin-bottom: 1vh;
-               ul{
-                margin-left: -2.7vw;
-                
-                    li{
-        
-                        font-size: 0.8rem;
-                        //border: 1px solid greenyellow;
-                        padding:2%;
-                        background: #dde1e7;
-                        border-radius: 5px;
-                        box-shadow: -5px -5px 5px #ffffff73,
-                                    7px 7px 5px rgba(94,104,121,0.200);
-                        color: grey;
-                        
-                       
-                    }
-                 
-                 }
-            }
-            
-            .pad-clavier{
-                //border: 1px solid rgb(210, 155, 247);
-                height: 28vh;
-                width: 18.5vw;
-                background: #dde1e7;
-                border-radius: 5px;
-                box-shadow: inset -5px -5px 5px #ffffff73,
-                           inset  7px 7px 5px rgba(94,104,121,0.200);
-                margin-top: 1.5vh;
-               
-               
-            
-            }
-        }
-        
-    }
-}
-
-
-
-
-
-
