@@ -1,50 +1,130 @@
 .accueil{
     position: relative;
+  
+    
 
     .container-accueil{
-       //border: 1px solid red;//=> soucis ---------
+      //border: 1px solid red;//=> soucis ---------
        display: flex;
        justify-content:  space-around;
        width: 75%;
        height: 90%;
+       padding-top:10.4vh;
+       padding-left:-4vw;  
        margin-left: 12.5%;
        margin-right: 12.5%;
+       
        h1{
-           font-size: 45px;
+           font-size: 2rem;
            text-align: right;      
        }
+
+       .box-titre-code{
+          // border: 1px solid red;
+           margin-top:32vh;
+           width:10vw;
+           height: 13vh;
+           padding-left:1vw;
+           padding-bottom:2vh;
+           position:relative;
+           background: #dde1e7;
+           border-radius:50px;
+           box-shadow: inset -5px -5px 5px #ffffff73,
+           inset  7px 7px 5px rgba(94,104,121,0.200);
+           
+       }
+
+       .box-titre-graph{margin-top:32vh;
+        width:15vw;
+        height: 13vh;
+        padding-left:1vw;
+        padding-bottom:2vh;
+        position:relative;
+        background: #dde1e7;
+        border-radius:50px;
+        box-shadow: inset -5px -5px 5px #ffffff73,
+        inset  7px 7px 5px rgba(94,104,121,0.200);
+        transition: transform 0.3s linear;
+       }
+
       .titre-developper,         
        .titre-graphiste{
-         margin-top:30%;
-         //border: 2px solid orchid;
-         height: 10%;
+         
+         
+         background:white;
+         padding:1rem;
+         border-radius:50px;
+         box-shadow: -5px -5px 5px #ffffff73,//rem
+            6px 6px 5px rgba(94,104,121,0.200);
        }
+
+       .titre-developper{
+           position:absolute;
+           width: 8vw;;
+           height: 9.5vh;
+           top:-1.5vh;
+           left:1vw;
+       }
+
+       .titre-graphiste{
+        height: 10vh;
+        position:absolute;
+        width: 13vw;;
+        height: 9.5vh;
+        top:-1.5vh;
+        left:1vw;
+        
+        //border: 2px solid rgb(210, 155, 247);//orchid;
+
+       }
+       .titre-developper:hover, .titre-graphiste:hover{
+   
+        //background: #e3edf7; 
+        border: 2px solid white;
+         transform: scale(0.97);
+         box-shadow: inset -5px -5px 5px #ffffff73,
+         inset  7px 7px 5px rgba(94,104,121,0.200);
+         
+     }
+     
+    
        
    }
 }
 
 .bloc-animation{
    //border:2px solid orange; //=> soucis ---------
-   width: 55%;
+   width: 41vw;
+   height: 55vh;
+   margin-top: 10vh;
+   //margin-left: 5vw;
+   background: #dde1e7;
+   border-radius:10px;
+   box-shadow: inset -5px -5px 5px #ffffff73,
+            inset  7px 7px 5px rgba(94,104,121,0.200);
+
   
    // Animation images :
    .picture-curtain {
+       //border: 1px solid blue;
        position: absolute;
-       margin: 0 auto;
+      
        top:50%;
        left:50%;
        transform: translate(-50%,-50%);
-       width: 41%;
+       width: 38%;
        height: 50%;
+       margin-left: -2.65vw;
+       margin-top: -1.9vh;
        overflow: hidden;
-       //border: 1px solid green;
+      
        
    
        div {
        position: absolute;
        width: 100%;
        height: 100%;
-       //border: 1px solid blue;
+      // border: 1px solid blue;
        img{
            height: 100%;
            display: block;
@@ -54,7 +134,18 @@
        .foreground-picture-container {
        width: 49%;
        overflow: hidden;
-       // border: 3px solid purple;
+       //border: 3px solid purple;
        }
    }
+}
+
+.container-img{
+    margin:1rem 1.1rem;
+    border: 3.5px solid white;
+    width: 38.5vw;
+    height: 51.2vh;
+    
+    box-shadow:  -5px -5px 5px #ffffff73,//rem
+            6px 6px 5px rgba(94,104,121,0.200);
+
 }
