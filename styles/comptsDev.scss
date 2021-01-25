@@ -16,7 +16,7 @@
             border-radius: 60px;
             box-shadow: inset -2px -2px 2px #ffffff73, inset 3px 3px 1px rgba(94,104,121,0.200);
             padding:0.5rem; 
-            transition: transform 0.4s;
+            //transition: transform 0.4s;
            
             .contenu-cmpts-1{
             background: white;
@@ -24,7 +24,7 @@
             padding:1vh 1vw 1vh 1vw;
             box-shadow: -5px -5px 5px #ffffff73,//rem
             6px 6px 5px rgba(94,104,121,0.200);
-            transition: transform 0.3s;
+            transition: transform 0.3s linear;
             }
             
         }
@@ -41,14 +41,10 @@
         }
         .fond-cmpts:hover{
             // color:white;
-            color:rgb(210, 155, 247);
+            //color:rgb(210, 155, 247);
              background-color:rgb(210, 155, 247);
             // box-shadow: 0em -0.1em 0.2em aqua, 0.1em 0.1em 0.2em aqua, 0.1em 0.1em 0.2em aqua;
-            .contenu-cmpts-1{
-                transform: scale(0.97);
-              box-shadow: inset -5px -5px 5px #ffffff73,
-             inset  7px 7px 5px rgba(94,104,121,0.200);
-             }  
+        
          }
   
 }
@@ -173,9 +169,29 @@
                 width: 18.5vw;
                 background: #dde1e7;
                 border-radius: 5px;
-                box-shadow: inset -5px -5px 5px #ffffff73,
-                           inset  7px 7px 5px rgba(94,104,121,0.200);
+                box-shadow: inset  -5px -5px 5px rgba(94,104,121,0.200),
+                inset 7px 7px 5px #ffffff73 ;
                 margin-top: 1.5vh;
+                transform: rotate(180deg);
+                padding: 1rem;
+
+                .trait-pad{
+                   // z-index: 1;
+                    // position:absolute;
+                  // display: block;
+                    background: #dde1e7;
+                    height: 8vh;
+                    width: 0.5vw;
+                    border-radius: 5rem;
+                    margin: auto;
+                   
+                    box-shadow: inset 7px 7px 5px #ffffff73,
+                    inset  -5px -5px 5px rgba(94,104,121,0.200);
+                   // left:180vw;
+                  //  top:140vh;
+
+                
+                }
                
                
             

@@ -1,0 +1,66 @@
+.web-developper-portfolio{
+    padding: 8rem ;
+
+    .container-portfolio-wev{
+        width: 85vw;
+        height: 65vh;
+        display: flex;
+        justify-content: space-around;
+        border: 1px solid red;
+
+        .btn-projets{
+            //border: 1px solid aqua;
+            width: 5vw;
+            height: 63vh;
+            margin: auto 0 auto 0;
+            //background-color:#F59ABD; //#A148C2;//#8B72F5;//rgba(228, 179, 46, 0.952);//8A7C8F //#C25D53;
+            background: rgb(238,174,202);
+        
+            border-radius: 20px;
+           
+            padding: 1.1rem;
+            box-shadow: inset 0px 0px 15px rgba(0,0,0,0.08);
+          
+
+            button{
+                color:gray;
+                display: block;
+                border-radius: 50px;
+                height: 5vh;
+                width: 2.5vw;
+                font-size: 1.4rem;
+                justify-content: center;
+                align-items: center;
+                margin-bottom:4vh ;
+                display: flex;
+                box-shadow: -5px -5px 5px #ffffff73,6px 6px 5px rgba(50, 55, 65, 0.2);
+                overflow: hidden;
+                outline: none;
+                border: none;
+                transition: transform 0.4s;
+            }
+            
+            button:hover{
+               box-shadow: inset 4px 4px 6px -1px rgba(0,0,0,0.2),
+                inset 4px 4px 6px -1px rgba(255,255,255,0.7),
+               -0.5px -0.5px 0px  rgba(255,255,255,1),
+               0.5px 0.5px 0px  rgba(0,0,0,0.15),
+               0px 12px 10px -10px rgba(0,0,0,0.5);
+               color:#F59ABD;
+            
+              // transform: translate(2px);
+               transform: scale(0.95);
+            }
+        }
+
+        .box-slider{
+
+            width: 50vw;
+            border: 1px solid orange;
+            margin: 1rem;
+            .box-projet{
+
+            }
+        }
+    }
+}

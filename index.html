@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Site CV Bruyninx Kelly</title>
+    <title>Bruyninx Kelly</title>
   </head>
   <body>
     <!--//////////// Menu fixe////////////////////-->
@@ -155,14 +155,32 @@
                       <li>Visual Studio Code</li>
                     </ul>
                   </div>
-                  <div class="pad-clavier"></div>
+                  <div class="pad-clavier">
+                    <div class="trait-pad"></div>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </section>
         <section class="page web-developper-portfolio" id="portfolio-web">
-          <p class="centrageTest">Portefolio web developer</p>
+          <div class="container-portfolio-wev">
+            <div class="btn-projets">
+              <button><i class="fas fa-star"></i></button>
+              <button><i class="far fa-circle"></i></button>
+              <button><i class="far fa-square"></i></button>
+              <button><i class="fas fa-circle"></i></button>
+              <button><i class="far fa-star"></i></button>
+              <button><i class="far fa-circle"></i></button>
+              <button><i class="fas fa-square"></i></button>
+            </div>
+            <div class="box-slider">
+              <p>titre +langage</p>
+              <div class="box-projet">
+                <img src="" alt="" />
+              </div>
+            </div>
+          </div>
         </section>
       </div>
       <!--colonne pages au centre-->
@@ -258,22 +276,22 @@
           <div class="interContact">
             <div class="container-pg-contact">
               <div class="formulaire">
-                <h3>Contact </h3>
+                <h3>Contact</h3>
                 <div class="col">
                   <div class="inputBox">
-                    <div class="text"> Nom</div>
+                    <div class="text">Nom</div>
                     <input type="text" name="" required="required" />
                   </div>
                 </div>
                 <div class="col">
                   <div class="inputBox">
-                    <div class="text"> Mail</div>
+                    <div class="text">Mail</div>
                     <input type="text" name="" required="required" />
                   </div>
                 </div>
                 <div class="col">
                   <div class="inputBox">
-                    <div class="text"> Message</div>
+                    <div class="text">Message</div>
                     <textarea required="required"></textarea>
                   </div>
                 </div>
@@ -283,42 +301,104 @@
               </div>
               <div class="containerDroit">
                 <div class="box-info">
-                  <div class="infos"> message a venir en animation sur la recherche de stage</div>
+                  <div class="infos">
+                    message a venir en animation sur la recherche de stage
+                  </div>
                 </div>
                 <div class="box-liens">
                   <div class="liens">
-                    <button class="btn-lien"><i class="fab fa-github"></i></button>
-                    <button class="btn-lien"><i class="fab fa-linkedin"></i></button>
+                    <button class="btn-lien">
+                      <i class="fab fa-github"></i>
+                    </button>
+                    <button class="btn-lien">
+                      <i class="fab fa-linkedin"></i>
+                    </button>
                     <button>
-                      <div class="btn-lien">
-                        <img src="./static/cv.png" alt="logo cv" />
-                      </button>
-                    </div>
+                      <div class="btn-lien"></div>
+                      <img src="./static/cv.png" alt="logo cv" />
+                    </button>
                   </div>
                 </div>
               </div>
             </div>
           </div>
         </section>
-     
+      </div>
+
       <!--colonne pages a droite-->
       <div class="container-droit">
         <section class="page graphisme-competence" id="competence-graph">
-          <div class="centrageTest">
-            <p>Suite Adobe : InDesign, Illustrator, Photoshop, Bridge.</p>
-            <p>Suite Microsoft Office : Word, Excel, PowerPoint.</p>
-            <p>Autre: Fontforge.</p>
-            <p>Systèmes d’exploitation : pc et mac.</p>
-            <ul>
-              <li>Création de logo, pictogrammes, typographies</li>
-              <li>Signalisations</li>
-              <li>Mises en page</li>
-              <li>Affiches, bannières, cartes, flyers et dépliants</li>
-              <li>Photographie, retouches et montages photo</li>
-              <li>Identités visuelles, chartes graphiques</li>
-              <li>Packaging</li>
-              <li>Reliures</li>
-            </ul>
+          <div class="container-compt-graph">
+            <div class="compt-box-gauche">
+              <div class="bord">
+                <div class="contour-img">
+                  <img
+                    src="./static/liquidAi.png"
+                    alt=""
+                    class="adobe-autre-taille"
+                  />
+                </div>
+              </div>
+              <div class="bord">
+                <div class="contour-img">
+                  <img src="./static/liquidInd.png" alt="" class="adobe" />
+                </div>
+              </div>
+              <div class="contour-office">
+                <div class="style-office">
+                  <img src="./static/office1.png" alt="" class="office" />
+                </div>
+              </div>
+            </div>
+            <div class="compt-box-central">
+              <div class="cmpt-centre">
+                <div class="p1-animation"></div>
+                <div class="p2-animation"></div>
+
+                <div>
+                  <!--<h3>Compétences</h3>-->
+                  <ul>
+                    <li>Création de logo, pictogrammes, typographies</li>
+                    <li>Signalisations</li>
+                    <li>Mises en page</li>
+                    <li>Affiches, bannières, cartes, flyers et dépliants</li>
+                    <li>Photographie, retouches et montages photo</li>
+                    <li>Identités visuelles, chartes graphiques</li>
+                    <li>Packaging</li>
+                    <li>Reliures</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="compt-box-droit">
+              <div class="bord ps">
+                <div class="contour-img">
+                  <img src="./static/liquidPs.png" alt="" class="adobe" />
+                </div>
+              </div>
+              <div class="bord">
+                <div class="contour-img">
+                  <img
+                    src="./static/liquidBr.png"
+                    alt=""
+                    class="adobe-autre-taille"
+                  />
+                </div>
+              </div>
+              <div class="contour-fontforge">
+                <div class="style-fontforge">
+                  <img
+                    src="./static/fontforge.png"
+                    class="logo-fontforge"
+                    alt="logo de l'application fontforge"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="systeme-exploition">
+            <i class="fab fa-apple"></i>
+            <i class="fab fa-windows"></i>
           </div>
         </section>
         <!--portefolio graphisme-->
@@ -335,11 +415,11 @@
               </ul>
             </div>
             <div class="texte-themes">
-              <h3>Titre - Années</h3>
+              <!-- <h3>Titre - Années</h3>
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut
                 fugiat officia voluptatibus odio asperiores maiores minus, ut
-              </p>
+              </p>-->
             </div>
           </div>
           <div class="col">

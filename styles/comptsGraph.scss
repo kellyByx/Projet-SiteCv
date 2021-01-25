@@ -1,0 +1,204 @@
+.graphisme-competence{
+        padding: 7rem;
+        font-size:0.8rem;
+      
+
+    .container-compt-graph{
+        //border: 1px solid aqua;
+        display: flex;
+        justify-content: space-between;
+        width: 83vw;
+        height: 65vh;
+        
+
+       .bord{
+        background-color:#e3edf7;
+        border-radius: 50%;
+        height:20vh ;
+        width: 10vw;
+        padding:1rem;
+        box-shadow: 9px 9px 16px rgb(163, 177, 198, 0.6),
+            -9px -9px 16px rgba(255, 255, 255, 0.5);
+        margin-bottom: 5vh;
+        //border: 2px solid gray ;
+        
+
+       }
+
+        .contour-img{
+            background-color: #e3edf7;
+            border-radius: 50%;
+            width: 8vw;
+            height: 16vh;
+            margin-bottom: 10vh;
+            border: 1px solid rgba(202, 196, 196, 0.66) ;
+            
+            box-shadow: inset 9px 9px 16px rgb(163, 177, 198, 0.6),
+            inset -9px -9px 16px rgba(255, 255, 255, 0.5);
+        }
+        
+
+        .adobe{
+            width: 16vw;
+           // border: 1px solid aqua;
+            border-radius: 50%;
+            margin-top: 1.7vh;
+            width: 8.5vw;
+            height: 14vh;
+        }
+
+        .adobe-autre-taille{
+            width: 16vw;
+            // border: 1px solid aqua;
+             border-radius: 50%;
+             margin-top: 3.3vh;
+             margin-left: 0.05vw;
+             width: 8vw;
+             height: 12vh;
+        }
+
+        .compt-box-gauche,.compt-box-droit{
+            width: 25vw;
+           // border: 1px solid pink;
+            padding: 2vh 7vw;
+        }
+
+        .compt-box-gauche{
+           .contour-office{
+            background-color: #e3edf7;
+            margin-left:10vw;
+            width: 5.7vw;
+            height: 12vh;
+            padding:0.5rem;
+            border-radius: 20px;
+            margin-top: -1rem;;
+           
+                .style-office{
+                    background-color: #e3edf7;
+                    width: 4.5vw;
+                    height: 10vh;
+                    padding: 0.3rem;
+                    border-radius: 20px;
+                    box-shadow: -5px -5px 5px #ffffff73,6px 6px 5px rgba(94,104,121,0.200);
+                    .office{
+                        width: 4vw;
+        
+                    }
+                }
+            }
+           
+        }
+        .compt-box-central{
+            width: 30vw;
+            align-items: center;
+            margin: auto 3vw;
+            padding:2rem;
+            position: relative;
+            
+            h3{
+                text-align: center;
+            }
+            ul{
+                list-style-type: circle;
+                li{
+                    margin-bottom: 0.5vh;
+                }
+            }
+           
+            .cmpt-centre{
+                
+                //border: 1px solid red;
+                width: 22vw;
+                height: 42vh;
+                border-radius: 50%;
+                padding: 3.5rem 4rem;
+                position: relative;
+                background-color: #e3edf7;
+                margin-top:5vh ;
+                box-shadow: 9px 9px 16px rgb(163, 177, 198, 0.6),
+                 -9px -9px 16px rgba(255, 255, 255, 0.5), inset 9px 9px 16px rgb(163, 177, 198, 0.6),
+                inset -9px -9px 16px rgba(255, 255, 255, 0.5);
+               // z-index: 100;
+            }
+              .p2-animation {
+                content: "";
+                position: absolute;
+                top: 11vh;
+                left: 0vw;
+                width: 20vw;
+                height: 40vh;
+                background: rgb(220, 87, 247);
+                box-shadow: -72px -120px 0 rgb(87, 209, 243);
+                border-radius: 50%;
+                animation: animate 5s linear infinite;
+                z-index: -100;
+              }
+              
+              .p2-animation {
+                content: "";
+                position: absolute;
+                top: -10vh;
+                left: -6vw;
+                width: 30vw;
+                height: 50vh;
+                background: #8dff08;
+                box-shadow: 72px 120px 0 #ffeb3b;
+                border-radius: 50%;
+                animation: animate 4s linear infinite;
+                z-index: -100;
+              }
+              @keyframes animate {
+                0% {
+                  filter: blur(50px) hue-rotate(0deg);
+                }
+                100% {
+                  filter: blur(50px) hue-rotate(360deg);
+                }
+            }
+
+        }
+        .compt-box-droit{
+            margin-right: 1rem;;
+
+            .ps{
+             //   margin-right: 2rem;
+            }
+
+            .contour-fontforge{
+                background-color: #e3edf7;
+                margin-left:-6vw;
+                width: 7vw;
+                height: 14vh;
+                padding:0.5rem;
+                border-radius: 50%;
+                margin-top: -2rem;;
+               
+                    .style-fontforge{
+                        background-color: #e3edf7;
+                        width: 6vw;
+                        height: 12vh;
+                        padding: 0.5rem;
+                        border-radius: 50%;
+                        box-shadow: -5px -5px 5px #ffffff73,6px 6px 5px rgba(94,104,121,0.200);
+                        .logo-fontforge{
+                            //margin-top:5vh ;
+                            width: 5vw;
+                            transition: transform 0.3s linear;
+                        }
+                    }
+                      
+                    
+                }
+        }
+    }
+    .systeme-exploition{
+        margin-top: 1rem;;
+        text-align: right;
+        font-size: 2rem;
+        color:gray;
+        i{
+            margin-right: 1vw;
+        }
+    }
+
+}
