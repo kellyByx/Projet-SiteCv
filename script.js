@@ -42,6 +42,7 @@ for (const unCompGraph of compGraph) {
   e.preventDefault();
   scrollToSection('competence-web');
 }); */
+
 const compWeb = document.querySelectorAll('a[href="#competence-web"]');
 console.log(compWeb);
 for (const unCompWeb of compWeb) {

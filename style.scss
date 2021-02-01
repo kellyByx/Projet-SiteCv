@@ -76,13 +76,13 @@ body{
     z-index: 100;
     top:0;
     width: 100vw;
-    height: 7vh;
+    height: 8vh;
     .liens-haut{
         display: flex;
         justify-content: space-between;
         width: 96vw;
         margin-top: 2vh;
-        margin-left: 1.2vw;
+        margin-left: 1.8vw;
         
         .lien-nom{
             margin-right: 8vw;
@@ -93,7 +93,7 @@ body{
 .menu-gauche{
     z-index: 80;
     left:0;
-    width: 4vw;
+    width: 5vw;
     height: 100vh;
     writing-mode: vertical-rl;
     text-orientation:mixed;
@@ -103,14 +103,14 @@ body{
         height: 42vw;
         width: 6vh;
         margin-top: 8vh;
-        margin-right: 0.1vw;           
+        margin-right: 0.6vw;           
     }
 }
 
 .menu-droite{
     z-index: 80;
     right: 0;
-    width: 4vw;
+    width: 5vw;
     height: 100vh;
     writing-mode: vertical-rl;
     text-orientation: mixed;
@@ -120,20 +120,20 @@ body{
         height: 42vw;
         width: 6vh;
         margin-top: 8vh;
-        margin-right: 0.1vw; 
+        margin-right: 0.6vw; 
     }
 }
 .menu-bas{
     z-index: 100;
     bottom:0;
     width: 100vw;
-    height: 8vh;
+    height: 9vh;
    
     .liens-bas{
         display: flex;
         justify-content: space-between;
         width: 64vw;
-        margin-top: 0.9vh;
+        margin-top: 1.8vh;
         margin-left: 17vw;
         //border: 1px solid red;
     }
@@ -144,9 +144,11 @@ a{
     color:rgb(210, 155, 247);
 }
 
+/*
 a:hover{
     color: purple;
 }
+*/
 
 .liens-horizontal{
     height: 40px;
@@ -163,9 +165,11 @@ a:hover{
    margin: 0 1%;
    border-radius: 8px;
    text-align: center;
-   background-color:#e3edf7; //#ecf1f3
-   box-shadow: 6px 6px 8px -1px rgba(0,0,0,0.15), -6px -6px 8px -1px rgba(255, 255, 255, 0.814);
-   border: 1px solid rgba(0,0,0,0);
+   background:  rgba(255,255,255,1);
+   border: 2px solid #e3edf7;
+   //background-color:#e3edf7; //#ecf1f3
+   box-shadow: 5px 5px 7px 1px rgba(0,0,0,0.15), -5px -5px 7px 1px rgba(255, 255, 255, 0.814);
+  // border: 1px solid rgba(0,0,0,0);
    transition: transform 0.4s;
 }
 
