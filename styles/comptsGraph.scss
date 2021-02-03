@@ -1,78 +1,82 @@
 .graphisme-competence{
-        padding: 7rem;
-        font-size:0.8rem;
-      
-
+    padding: 7rem;
+    font-size:0.8rem;
     .container-compt-graph{
         //border: 1px solid aqua;
         display: flex;
         justify-content: space-between;
         width: 86.5vw;
         height: 65vh;
-        
-
-       .bord{
-        background-color:#e3edf7;
-        border-radius: 50%;
-        height:20vh ;
-        width: 10vw;
-        padding:1rem;
-        box-shadow: 9px 9px 16px rgb(163, 177, 198, 0.6),
-            -9px -9px 16px rgba(255, 255, 255, 0.5);
-        margin-bottom: 5vh;    
-       }
-
-        .contour-img{
-            background-color: #e3edf7;
-            border-radius: 50%;
-            width: 8vw;
-            height: 16vh;
-            margin-bottom: 10vh;
-            border: 1px solid rgba(202, 196, 196, 0.66) ;
-            
-            box-shadow: inset 9px 9px 16px rgb(163, 177, 198, 0.6),
-            inset -9px -9px 16px rgba(255, 255, 255, 0.5),
-            6px 6px 8px rgb(163, 177, 198, 0.6),
-            -6px -6px 12px rgba(255, 255, 255, 0.5);;
-        }
-        
-
-        .adobe{
-            width: 16vw;
-           // border: 1px solid aqua;
-            border-radius: 50%;
-            margin-top: 1.7vh;
-            width: 8.5vw;
-            height: 14vh;
-        }
-
-        .adobe-autre-taille{
-            width: 16vw;
-            // border: 1px solid aqua;
-             border-radius: 50%;
-             margin-top: 3.3vh;
-             margin-left: 0.05vw;
-             width: 8vw;
-             height: 12vh;
-        }
 
         .compt-box-gauche,.compt-box-droit{
             width: 25vw;
             padding-top: 5vh;
+
+            .card-competence{
+                display: flex;
+                justify-content: space-around;
+                //border: 1px solid aqua;
+                font-size: 1rem;
+               
+            
+                .bord{
+    
+                    background-color:#e3edf7;
+                    border-radius: 50%;
+                    height:20vh ;
+                    width: 10vw;
+                    padding:1rem;
+                    box-shadow: 9px 9px 16px rgb(163, 177, 198, 0.6),  -9px -9px 16px rgba(255, 255, 255, 0.5);
+                    margin-bottom: 5vh;    
+
+                    .contour-img{
+                        background-color: #e3edf7;
+                        border-radius: 50%;
+                        width: 8vw;
+                        height: 16vh;
+                        margin-bottom: 10vh;
+                        border: 1px solid rgba(202, 196, 196, 0.66) ;
+                        box-shadow: inset 9px 9px 16px rgb(163, 177, 198, 0.6),
+                        inset -9px -9px 16px rgba(255, 255, 255, 0.5),
+                        6px 6px 8px rgb(163, 177, 198, 0.6),
+                        -6px -6px 12px rgba(255, 255, 255, 0.5);;
+
+                        .adobe{
+                            width: 16vw;
+                           // border: 1px solid aqua;
+                            border-radius: 50%;
+                            margin-top: 1.7vh;
+                            width: 8.5vw;
+                            height: 14vh;
+                        }
+                    
+                        .adobe-autre-taille{
+                            width: 16vw;
+                            // border: 1px solid aqua;
+                             border-radius: 50%;
+                             margin-top: 3.3vh;
+                            // margin-left: 0.05vw;
+                             width: 8vw;
+                             height: 12vh;
+                        }
+                    }
+                }
+            }
         }
 
         .compt-box-gauche{
             //border:1px solid red;
             padding-left: 4vw;
-           .contour-office{
+           
+            
+            .contour-office{
             background-color: #e3edf7;
             margin-left: 7vw;
             width: 6vw;
             height: 12vh;
             padding:0.5rem;
             border-radius: 50px;
-           
-           
+    
                 .style-office{
                     background-color: #e3edf7;
                     width: 5vw;
@@ -93,12 +97,12 @@
             }
            
         }
+
         .compt-box-central{
             //border:1px solid red;
             width: 32vw;
             align-items: center;
-            
-            
+
             h3{
                 text-align: center;
                 font-size: 2.2rem;
@@ -106,19 +110,17 @@
                 margin:0;
                 margin-bottom: 4vh;
                // text-shadow: -2px -2px 2px #ffffff73,3px 3px 2px rgba(94,104,121,0.200);
-                
-            
             }
+
             .extérieur-contour-cmpt-centre{
                 width: 32vw;
-                    height: 49vh;
-                    padding: 0.8rem;
-                    background-color: #e3edf7;
-                    border-radius: 5px;
-                    margin:auto;
-                   
+                height: 49vh;
+                padding: 0.8rem;
+                background-color: #e3edf7;
+                border-radius: 5px;
+                margin:auto;
+                
                 .contour-cmpt-centre{
-            
                     width: 30vw;
                     height: 46vh;
                     padding: 0.8rem;
@@ -142,7 +144,7 @@
                         border-radius: 5px;
                         box-shadow: 7px 7px 16px rgb(163, 177, 198, 0.6),
                         -7px -7px 16px rgba(255, 255, 255, 0.5);
-
+    
                         ul{
                             list-style-type: circle;
                             li{
@@ -153,41 +155,37 @@
                         }
                     }
                 }
-             }
-
+        
+            }
         }
         .compt-box-droit{
             margin-right: 2rem;;
-            //border:1px solid red;
-            padding-left: 11vw;
+           // border:1px solid red;
+            padding-right: 4vw;
 
-               .contour-fontforge{
+            .contour-fontforge{
+                background-color: #e3edf7;
+                margin-right:7vw;
+                width: 6vw;
+                height: 12vh;
+                padding:0.5rem;
+                border-radius: 50%;
+
+                .style-fontforge{
                     background-color: #e3edf7;
-                    margin-left:-3vw;
-                    width: 6vw;
-                    height: 12vh;
-                    padding:0.5rem;
+                    width: 5vw;
+                    height: 10vh;
+                    padding: 0.5rem;
                     border-radius: 50%;
-                    
-               
-                    .style-fontforge{
-                        background-color: #e3edf7;
-                        width: 5vw;
-                        height: 10vh;
-                        padding: 0.5rem;
-                        border-radius: 50%;
-                        box-shadow: inset 9px 9px 16px rgb(163, 177, 198, 0.6),
-                        inset -9px -9px 16px rgba(255, 255, 255, 0.5),
-                        -5px -5px 5px #ffffff73,6px 6px 5px rgba(94,104,121,0.200);
-                        .logo-fontforge{
-                            //margin-top:5vh ;
-                            width: 4vw;
-                            //transition: transform 0.3s linear;
-                        }
+                    box-shadow: inset 9px 9px 16px rgb(163, 177, 198, 0.6),
+                    inset -9px -9px 16px rgba(255, 255, 255, 0.5),
+                    -5px -5px 5px #ffffff73,6px 6px 5px rgba(94,104,121,0.200);
+                    .logo-fontforge{
+                        width: 4vw;
                     }
-                      
-                    
                 }
+                
+            }
         }
     }
     .systeme-exploition{
@@ -199,5 +197,58 @@
             margin-right: 1vw;
         }
     }
+}
 
+
+.bord-nom-d,.bord-nom-g{
+    .p-commun{
+        width: 8vw;
+        height: 4vh;
+        text-align: center;
+        border-radius: 20px;
+        margin: 0.5rem;
+        padding:0.5rem;
+        color:white;
+    }
+}
+
+.bord-nom-g{
+    //border: 1px solid red;
+    margin: auto;
+    width: 9vw;
+    height: 6.5vh;
+    border-radius: 20px;
+    background:#e3edf7;
+    box-shadow:  -5px -5px 5px #ffffff73,6px 6px 5px rgba(94,104,121,0.200);
+   
+
+    .p-illustrator{
+        background: rgb(245, 150, 34);
+        box-shadow: inset 4px 4px 7px rgba(216, 128, 27, 0.6),inset -5px -5px 6px rgba(242, 199, 55, 0.664);
+    }
+
+    .p-indesign{
+        background: rgb(187,89,137);
+        //box-shadow: inset 4px 4px 7px rgba(216, 128, 27, 0.6),inset -5px -5px 6px rgba(242, 199, 55, 0.664);
+    }
+}
+
+.bord-nom-d{
+    //border: 1px solid red;
+    margin: auto;
+    width: 9vw;
+    height: 6.5vh;
+    border-radius: 20px;
+    background:#e3edf7;
+    box-shadow:  -5px -5px 5px #ffffff73,6px 6px 5px rgba(94,104,121,0.200);
+
+    .p-photoshop{
+        background: rgb(50,196,243);
+        //box-shadow: inset 4px 4px 7px rgba(216, 128, 27, 0.6),inset -5px -5px 6px rgba(242, 199, 55, 0.664);
+    }
+
+    .p-bridge{
+        background: rgb(253,196,1);
+        //box-shadow: inset 4px 4px 7px rgba(216, 128, 27, 0.6),inset -5px -5px 6px rgba(242, 199, 55, 0.664);
+    }
 }

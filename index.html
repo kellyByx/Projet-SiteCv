@@ -21,7 +21,7 @@
             <a href="#parcours">Parcours</a>
           </div>
           <div class="boutton liens-horizontal">
-            <a href="#accueil"> Logo </a>
+            <a href="#accueil"> Accueil </a>
           </div>
           <div class="boutton liens-horizontal">
             <a href="#contact">Contact</a>
@@ -289,6 +289,7 @@
               Impulsion 12 mois,
               https://www.leforem.be/particuliers/aides-emploi-impulsion-12-mois-plus.html
             </p>
+            <p>FPI</p>
           </div>
         </section>
         <section class="page pgContact" id="contact">
@@ -346,7 +347,9 @@
                     </button>
                     <button>
                       <div class="btn-lien"></div>
-                      <img src="./static/cv.png" alt="logo cv" />
+                      <a href="./static/bruyninx_kelly_cv.pdf" target="_blank">
+                        <img src="./static/cv.png" alt="logo cv" />
+                      </a>
                     </button>
                   </div>
                 </div>
@@ -361,24 +364,37 @@
         <section class="page graphisme-competence" id="competence-graph">
           <div class="container-compt-graph">
             <div class="compt-box-gauche">
-              <div class="bord">
-                <div class="contour-img">
-                  <img
-                    src="./static/liquidAi.png"
-                    alt=""
-                    class="adobe-autre-taille"
-                  />
+              <div class="card-competence">
+                <div class="bord">
+                  <div class="contour-img">
+                    <img
+                      src="./static/liquidAi.png"
+                      alt=""
+                      class="adobe-autre-taille"
+                    />
+                  </div>
+                </div>
+                <div class="bord-nom-g">
+                  <p class="p-commun p-illustrator">Illustrator</p>
                 </div>
               </div>
-              <div class="bord">
-                <div class="contour-img">
-                  <img src="./static/liquidInd.png" alt="" class="adobe" />
+              <div class="card-competence">
+                <div class="bord">
+                  <div class="contour-img">
+                    <img src="./static/liquidInd.png" alt="" class="adobe" />
+                  </div>
+                </div>
+                <div class="bord-nom-g">
+                  <div><p class="p-commun p-indesign">InDesign</p></div>
                 </div>
               </div>
-              <div class="contour-office">
-                <div class="style-office">
-                  <img src="./static/office1.png" alt="" class="office" />
+              <div class="card-competence">
+                <div class="contour-office">
+                  <div class="style-office">
+                    <img src="./static/office1.png" alt="" class="office" />
+                  </div>
                 </div>
+                <div><p>Suite Office</p></div>
               </div>
             </div>
             <div class="compt-box-central">
@@ -401,27 +417,42 @@
               </div>
             </div>
             <div class="compt-box-droit">
-              <div class="bord ps">
-                <div class="contour-img">
-                  <img src="./static/liquidPs.png" alt="" class="adobe" />
+              <div class="card-competence">
+                <div class="bord-nom-d">
+                  <div><p class="p-commun p-photoshop">Photoshop</p></div>
+                </div>
+                <div class="bord ps">
+                  <div class="contour-img">
+                    <img src="./static/liquidPs.png" alt="" class="adobe" />
+                  </div>
                 </div>
               </div>
-              <div class="bord">
-                <div class="contour-img">
-                  <img
-                    src="./static/liquidBr.png"
-                    alt=""
-                    class="adobe-autre-taille"
-                  />
+              <div class="card-competence">
+                <div class="bord-nom-d">
+                  <div><p class="p-commun p-bridge">Bridge</p></div>
+                </div>
+                <div class="bord">
+                  <div class="contour-img">
+                    <img
+                      src="./static/liquidBr.png"
+                      alt=""
+                      class="adobe-autre-taille"
+                    />
+                  </div>
                 </div>
               </div>
-              <div class="contour-fontforge">
-                <div class="style-fontforge">
-                  <img
-                    src="./static/fontforge.png"
-                    class="logo-fontforge"
-                    alt="logo de l'application fontforge"
-                  />
+              <div class="card-competence">
+                <div class="">
+                  <div><p>FontForge</p></div>
+                </div>
+                <div class="contour-fontforge">
+                  <div class="style-fontforge">
+                    <img
+                      src="./static/fontforge.png"
+                      class="logo-fontforge"
+                      alt="logo de l'application fontforge"
+                    />
+                  </div>
                 </div>
               </div>
             </div>
@@ -444,13 +475,7 @@
                 <li><a href="nav-galerie">Autres</a></li>
               </ul>
             </div>
-            <div class="texte-themes">
-              <!-- <h3>Titre - Années</h3>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut
-                fugiat officia voluptatibus odio asperiores maiores minus, ut
-              </p>-->
-            </div>
+            <div class="texte-themes"></div>
           </div>
           <div class="col">
             <div class="gallery-box">
