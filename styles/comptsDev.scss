@@ -5,10 +5,17 @@
 
 .categorie-competence{
     margin: 8vh auto 5vh auto;;
-    font-size: 1rem;
     display: flex;
     justify-content: space-around;
     width: 75vw;
+
+    button{
+        text-decoration: none;
+        outline:none;
+        border: none;
+        box-shadow: none;
+        font-size: 1rem;
+    }
     
 
         .fond-cmpts{
@@ -174,21 +181,13 @@
                 padding: 1rem;
 
                 .trait-pad{
-                   // z-index: 1;
-                    // position:absolute;
-                  // display: block;
                     background: #dde1e7;
                     height: 8vh;
                     width: 0.5vw;
                     border-radius: 5rem;
                     margin: auto;
-                   
                     box-shadow: inset 7px 7px 5px #ffffff73,
                     inset  -5px -5px 5px rgba(94,104,121,0.200);
-                   // left:180vw;
-                  //  top:140vh;
-
-                
                 }
                
                

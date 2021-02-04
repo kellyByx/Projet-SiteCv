@@ -2,7 +2,6 @@
     padding: 7rem;
     font-size:0.8rem;
     .container-compt-graph{
-        //border: 1px solid aqua;
         display: flex;
         justify-content: space-between;
         width: 86.5vw;
@@ -15,12 +14,9 @@
             .card-competence{
                 display: flex;
                 justify-content: space-around;
-                //border: 1px solid aqua;
                 font-size: 1rem;
-               
-            
+      
                 .bord{
-    
                     background-color:#e3edf7;
                     border-radius: 50%;
                     height:20vh ;
@@ -43,7 +39,6 @@
 
                         .adobe{
                             width: 16vw;
-                           // border: 1px solid aqua;
                             border-radius: 50%;
                             margin-top: 1.7vh;
                             width: 8.5vw;
@@ -65,8 +60,30 @@
         }
 
         .compt-box-gauche{
-            //border:1px solid red;
             padding-left: 4vw;
+
+            .bord-nom-office{
+                margin: auto;
+                width: 9vw;
+                height: 6.5vh;
+                margin-right: -2.3vw;
+                border-radius: 20px;
+                background:#e3edf7;
+                box-shadow:  -5px -5px 5px #ffffff73,6px 6px 5px rgba(94,104,121,0.200);
+               
+                .p-office{
+                    width: 8vw;
+                    height: 4vh;
+                    text-align: center;
+                    border-radius: 20px;
+                    margin: 0.5rem;
+                    padding:0.5rem;
+                    background: white;
+                    color:red;
+                    box-shadow: inset 4px 4px 5px rgb(163, 177, 198, 0.6),
+                    inset -4px -4px 9px rgba(255, 255, 255, 0.5);
+                }             
+            }
            
             
             .contour-office{
@@ -99,7 +116,6 @@
         }
 
         .compt-box-central{
-            //border:1px solid red;
             width: 32vw;
             align-items: center;
 
@@ -108,28 +124,25 @@
                 font-size: 2.2rem;
                 padding: 0;
                 margin:0;
-                margin-bottom: 4vh;
-               // text-shadow: -2px -2px 2px #ffffff73,3px 3px 2px rgba(94,104,121,0.200);
+                margin-bottom: 5vh;
             }
 
             .extérieur-contour-cmpt-centre{
                 width: 32vw;
-                height: 49vh;
-                padding: 0.8rem;
+                height: 40vh;
+                padding: 0.9rem;
                 background-color: #e3edf7;
                 border-radius: 5px;
                 margin:auto;
                 
                 .contour-cmpt-centre{
                     width: 30vw;
-                    height: 46vh;
+                    height: 36vh;
                     padding: 0.8rem;
                     background-color: #e3edf7;
-                    // border-radius: 30px 5px 30px 5px;
                     border-radius: 5px;
                     margin:auto;
                     border:2px solid rgb(210, 155, 247);
-                    //box-shadow: inset -5px -5px 5px #ffffff73, inset 7px 7px 5px rgba(94,104,121,0.200);
                     box-shadow:  -5px -5px 5px #ffffff73,
                     inset -5px -5px 5px #ffffff73,
                     6px 6px 5px rgba(94,104,121,0.200), 
@@ -137,8 +150,8 @@
 
                     .cmpt-centre{
                         width: 28vw;
-                        height: 42vh;
-                        padding: 1.2rem 0.4rem;
+                        height: 32vh;
+                        padding: 2rem 0rem;
                         background-color: white;
                         //border-radius: 30px 5px 30px 5px;
                         border-radius: 5px;
@@ -148,7 +161,7 @@
                         ul{
                             list-style-type: circle;
                             li{
-                                font-size: 0.88rem;
+                                font-size: 0.84rem;
                                 color:gray;
                                 margin-bottom: 2.4vh;
                             }
@@ -160,8 +173,29 @@
         }
         .compt-box-droit{
             margin-right: 2rem;;
-           // border:1px solid red;
             padding-right: 4vw;
+
+            .bord-nom-fontforge{
+                margin: auto;
+                width: 9vw;
+                height: 6.5vh;
+                margin-left: -2.5vw;
+                border-radius: 20px;
+                background:#e3edf7;
+                box-shadow:  -5px -5px 5px #ffffff73,6px 6px 5px rgba(94,104,121,0.200);
+               
+                .p-fontforge{
+                    width: 8vw;
+                    height: 4vh;
+                    text-align: center;
+                    border-radius: 20px;
+                    margin: 0.5rem;
+                    padding:0.5rem;
+                    background: white;
+                    box-shadow: inset 4px 4px 5px rgb(163, 177, 198, 0.6),
+                    inset -4px -4px 9px rgba(255, 255, 255, 0.5);
+                }             
+            }
 
             .contour-fontforge{
                 background-color: #e3edf7;
@@ -189,16 +223,26 @@
         }
     }
     .systeme-exploition{
-        margin-top: 1.5rem;;
-        text-align: right;
-        font-size: 2rem;
-        color:gray;
+       margin-top: 4rem;;
+       text-align: right;
+       font-size: 2rem;
+       color:gray;
+       display: flex;
+       padding: auto;
+       padding-left: 12vw;
+
         i{
             margin-right: 1vw;
+            margin-left: 1vw;
+        }
+        .trait{
+            background:gray;
+            height: 4vh;
+            width: 0.13vw;
+            border-radius: 5rem;
         }
     }
 }
-
 
 .bord-nom-d,.bord-nom-g{
     .p-commun{
@@ -213,7 +257,6 @@
 }
 
 .bord-nom-g{
-    //border: 1px solid red;
     margin: auto;
     width: 9vw;
     height: 6.5vh;
@@ -221,20 +264,17 @@
     background:#e3edf7;
     box-shadow:  -5px -5px 5px #ffffff73,6px 6px 5px rgba(94,104,121,0.200);
    
-
     .p-illustrator{
         background: rgb(245, 150, 34);
-        box-shadow: inset 4px 4px 7px rgba(216, 128, 27, 0.6),inset -5px -5px 6px rgba(242, 199, 55, 0.664);
+        box-shadow: inset 4px 4px 7px rgba(216, 128, 27, 0.6),inset -5px -5px 8px rgba(242, 199, 55, 0.664);
     }
-
     .p-indesign{
         background: rgb(187,89,137);
-        //box-shadow: inset 4px 4px 7px rgba(216, 128, 27, 0.6),inset -5px -5px 6px rgba(242, 199, 55, 0.664);
+        box-shadow: inset 4px 4px 7px rgba(139, 70, 101, 0.6),inset -5px -5px 6px rgba(224, 90, 126, 0.664);
     }
 }
 
 .bord-nom-d{
-    //border: 1px solid red;
     margin: auto;
     width: 9vw;
     height: 6.5vh;
@@ -244,11 +284,10 @@
 
     .p-photoshop{
         background: rgb(50,196,243);
-        //box-shadow: inset 4px 4px 7px rgba(216, 128, 27, 0.6),inset -5px -5px 6px rgba(242, 199, 55, 0.664);
+        box-shadow: inset 4px 4px 7px rgba(10, 121, 157, 0.6),inset -5px -5px 6px rgba(64, 201, 247, 0.664);
     }
-
     .p-bridge{
         background: rgb(253,196,1);
-        //box-shadow: inset 4px 4px 7px rgba(216, 128, 27, 0.6),inset -5px -5px 6px rgba(242, 199, 55, 0.664);
+        box-shadow: inset 4px 4px 7px rgba(186, 144, 1, 0.6),inset -5px -5px 6px rgba(238, 196, 56, 0.726);
     }
 }

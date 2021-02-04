@@ -24,7 +24,7 @@
                 box-shadow: -5px -5px 5px #ffffff73,6px 6px 5px rgba(94,104,121,0.200);
                 
                 h3{
-                   font-size: 2rem;
+                   font-size: 2.1rem;
                   text-align: center;
                 }
         
@@ -75,12 +75,10 @@
                     .btn-envoyer:hover{
                       
                         box-shadow:  inset -5px -5px 5px rgba(255, 255, 255, 0.907),
-                        inset  7px 7px 5px rgba(94,104,121,0.200);
-                       
+                        inset  7px 7px 5px rgba(94,104,121,0.200);    
                         transform: scale(0.95);
                         color:rgb(210, 155, 247);
                         
-
                         .btn-envoyer{
                             font-size: 1rem;
                         }
@@ -167,7 +165,7 @@
                         img{
                            // width: 2.7vw;
                            transform: scale(0.97);
-                           color:purple;
+                           background: rgb(216, 163, 252);
                         }
 
                         i{
