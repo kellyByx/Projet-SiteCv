@@ -1,46 +1,79 @@
 .accueil{
     padding: 8%;
     .container-accueil{
-        border: 1px solid aqua;
+        //border: 1px solid blue;
         width: 82vw;
         height: 65vh;
 
         .mot-acceuil{
-            height: 20vh;
+            height: 24vh;
+            border: 1px solid greenyellow;
+            margin-bottom: 1vh;
 
         }
         
        .container-titres{
         display: flex;
-        border: 1px solid red;
+        //border: 1px solid red;
         height: 40vh;
         padding: 2%;
         align-items: center;
         padding-left: 25vw;
 
         .box-titre-code,.box-titre-graph{
-           
+            
             width: 16vw;
             height:  32vh;
             background-color: #e3edf7;
             border-radius: 50%;
             align-items: center;
             padding:auto;
+            position: relative;
+            padding: 2.5%;
+
             .titre-developper,.titre-graphiste{
+                font-size: 2rem;
+                text-decoration: none;
+                outline:none;
+                border: none;
                 background-color: white;
                 width: 13vw;
                 height:  26vh;
                 border-radius: 50%;
                 margin: auto;
-                margin-top: 9%;
-                text-align: center;
-                padding-top: 35%;
+               
+               /*margin: 0;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                -ms-transform: translate(-50%, -50%);
+                transform: translate(-50%, -50%);
+                */
+               
+                box-shadow: 6px 6px 8px rgb(163, 177, 198, 0.6),
+                -6px -6px 12px rgba(255, 255, 255, 0.5);
+                transition: transform 0.4s;
                
             }
+            .titre-developper:hover, .titre-graphiste:hover{
+                //background: #e3edf7; 
+                border: 2px solid white;
+                transform: scale(0.97);
+                box-shadow: inset -5px -5px 5px #ffffff73,
+                inset  7px 7px 5px rgba(94,104,121,0.200);
+              
+                a{
+                    transform: scale(0.95);
+                     color: purple;
+                }
+            }
+           
         }
-        .box-titre-graph{
-            margin-left: -1vw;
+        .box-titre-code{
+            margin-right: -1.4vw;
+            z-index: 1;
         }
+      
        }
     }
 }
