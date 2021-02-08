@@ -35,6 +35,7 @@ document.querySelector('a[href="#contact"]').addEventListener('click', (e) => {
   scrollToSection('contact');
 });
 
+// changement pour avoir 2 lienspour  graphisme/developper competences.
 document.querySelector('a[href="#portfolio-graph"]').addEventListener('click', (e) => {
   e.preventDefault();
   scrollToSection('portfolio-graph');
@@ -90,7 +91,7 @@ const links = document.querySelectorAll('a[href="nav-galery-graph"]');
 
 links.forEach((link) => {
   link.addEventListener('click', (e) => {
-    const id = e.currentTarget.id; // link.id;
+    const id = e.target.matches.id;// e.currentTarget.id; // link.id;
     if (id === 'nav-projet1') {
       portfolioDeveloper.innerHTML = projet1View;
     } else if (id === 'nav-projet2') {

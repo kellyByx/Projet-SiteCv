@@ -1,5 +1,94 @@
 
+//ancient code :
 
+.accueil{
+    position: relative;
+    padding: 2%;
+      .container-accueil{
+       border: 1px solid aqua;
+       display: flex;
+       justify-content:  space-around;
+       width: 75vw;
+       height: 50vh;
+    
+       margin-left: 12.5%;
+       margin-right: 12.5%;
+       
+       h1{
+           font-size: 2rem;
+           text-align: right;      
+           border: 1px solid red;
+       }
 
+       .box-titre-code{
+          // border: 1px solid red;
+           margin-top:32vh;
+           width:10vw;
+           height: 13vh;
+           padding-left:1vw;
+           padding-bottom:2vh;
+           position:relative;
+           background: #dde1e7;
+           border-radius:50px;
+           box-shadow: inset -5px -5px 5px #ffffff73,
+           inset  7px 7px 5px rgba(94,104,121,0.200);
+           border: 1px solid red;
+           
+       }
 
+       .box-titre-graph{margin-top:32vh;
+        width:15vw;
+        height: 13vh;
+        padding-left:1vw;
+        padding-bottom:2vh;
+        position:relative;
+        background: #dde1e7;
+        border-radius:50px;
+        box-shadow: inset -5px -5px 5px #ffffff73,
+        inset  7px 7px 5px rgba(94,104,121,0.200);
+        transition: transform 0.3s linear;
+        border: 1px solid red;
+       }
 
+      .titre-developper,         
+       .titre-graphiste{
+         background:white;
+         padding:1rem;
+         border-radius:50px;
+         box-shadow: -5px -5px 5px #ffffff73,//rem
+            6px 6px 5px rgba(94,104,121,0.200);
+            a{
+                text-decoration: none ;
+                color:rgb(210, 155, 247);
+            }
+       }
+
+       .titre-developper{
+           position:absolute;
+           width: 8vw;;
+           height: 9.5vh;
+           top:-1.5vh;
+           left:1vw;
+       }
+
+       .titre-graphiste{
+        height: 10vh;
+        position:absolute;
+        width: 13vw;;
+        height: 9.5vh;
+        top:-1.5vh;
+        left:1vw;
+        //border: 2px solid rgb(210, 155, 247);//orchid;
+       }
+       .titre-developper:hover, .titre-graphiste:hover{
+         //background: #e3edf7; 
+         border: 2px solid white;
+         transform: scale(0.97);
+         box-shadow: inset -5px -5px 5px #ffffff73,
+         inset  7px 7px 5px rgba(94,104,121,0.200);
+            a:hover{
+                color: purple;
+            }
+        }
+   }
+}
