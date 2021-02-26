@@ -1,61 +1,46 @@
 .accueil{
-    padding: 8% 10%;
+    padding: 7% 10%;
     .container-accueil{
-        //border: 1px solid blue;
-        width: 82vw;
+        width: 80vw;
         height: 65vh;
        
-
         .fond-acceuil{
-            width: 62vw;
-            height: 30vh;
+            width: 50vw;
+            height: 26vh;
             display: flex;
             justify-content: space-between;
             margin-bottom: 1vh;
             padding:1.5% 2%;
             margin-left: 10vw;
-            box-sizing: border-box;
-            border-radius: 16px;
-            background-color:#e3edf7;
-            box-shadow:  -4px -4px 5px #ffffff73,  7px 7px 5px rgba(94,104,121,0.200);
-            border: 5px solid #e3edf7;
-
-            .gauche-msg{
-              
-                width: 20vw;
-                height: 24vh;
-                background-color: white;
-                border-radius: 5%;
-                border: 5px solid #e3edf7;  
-                box-shadow:  -4px -4px 5px #ffffff73,  7px 7px 5px rgba(94,104,121,0.200);
+      
+            .trait{
+                background:gray;
+                height: 22vh;
+                width: 0.2vw;
+                border-radius: 5rem;
+            }
+            .bvn-titre{
+                height: 20vh;
+                p{
+                    font-size: 2.5rem;
+                    color: gray ;
+                    text-align: right;     
+                    margin-top: -4vh;
+                    font-size: 2.31rem;        
+                    font-weight: bold;     
+                }
+                .p1{
+                    margin-top: 1.4vh;
+                }
             }
 
-            .contour-msg-acceuil{
-                border-radius: 15px;
-                box-shadow:  -5px -5px 5px #ffffff73,
-                inset -5px -5px 5px #ffffff73,
-                7px 7px 5px rgba(94,104,121,0.200), 
-                inset 7px 7px 5px rgba(94,104,121,0.200);
-                width: 35vw;
-                height: 24vh;
-                padding: 1rem;
-            
-
-                .msg-acceuil{
-                   
-                    //border: 1px solid red;
-                    width: 32.8vw;
-                    height: 20vh;
-                    background-color: white;
-                    border-radius:10px ;
-                    color:grey;
-                    padding-top:1rem;
-                    padding: 1% 5%;
-                    h1{
-                        text-align: center;
-                    }
-                    
-                }
+            .msg-acceuil{
+                width: 30vw;
+                height: 20vh;
+                background-color: white;
+                border-radius:10px ;
+                color:grey;
+                padding: 1%;
             }
         }
         
@@ -104,7 +89,6 @@
                     transform: scale(0.95);
                     color: rgb(237, 80, 211);
                    // color: gold;
-                
                 }
             }
            
