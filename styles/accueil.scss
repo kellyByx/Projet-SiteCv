@@ -1,21 +1,21 @@
 .accueil{
-    padding: 7% 10%;
+    padding: 6% 10%;
     .container-accueil{
         width: 80vw;
         height: 65vh;
        
         .fond-acceuil{
-            width: 50vw;
+            width: 52vw;
             height: 26vh;
             display: flex;
             justify-content: space-between;
-            margin-bottom: 1vh;
+            margin-bottom: 3.5vh;
             padding:1.5% 2%;
             margin-left: 10vw;
       
             .trait{
                 background:gray;
-                height: 22vh;
+                height: 20vh;
                 width: 0.2vw;
                 border-radius: 5rem;
             }
@@ -35,69 +35,95 @@
             }
 
             .msg-acceuil{
-                width: 30vw;
+                width: 31vw;
                 height: 20vh;
                 background-color: white;
                 border-radius:10px ;
                 color:grey;
                 padding: 1%;
+
+                a:hover{
+                    color: rgb(237, 80, 211);
+                }
             }
         }
         
        .container-titres{
         display: flex;
-        //border: 1px solid red;
+        justify-content: space-between;
+        border: 5px solid #e3edf7;
+        box-shadow:  -4px -4px 5px #ffffff73,   7px 7px 5px rgba(94,104,121,0.200);
+        border-radius: 16px;
         height: 40vh;
+        width: 65.5vw;
         padding: 2%;
         align-items: center;
-        padding-left: 25vw;
+        padding-left: 1vw;
+        margin-left: 6vw;
 
-        .box-titre-code,.box-titre-graph{
-            
-            width: 16vw;
-            height:  32vh;
-            background-color: #e3edf7;
-            border-radius: 50%;
-            align-items: center;
-            padding:auto;
-            position: relative;
-            padding: 2.5%;
+       
 
-            .titre-developper,.titre-graphiste{
-                font-size: 2rem;
-                text-decoration: none;
-                outline:none;
-                border: none;
-                background-color: white;
-                width: 13vw;
-                height:  26vh;
-                border-radius: 50%;
-                margin: auto;
-                box-shadow: 6px 6px 8px rgb(163, 177, 198, 0.6),
-                -6px -6px 12px rgba(255, 255, 255, 0.5);
-                transition: transform 0.4s;
-               
-            }
-            .titre-developper:hover, .titre-graphiste:hover{
-                //background: #e3edf7; 
-                border: 2px solid white;
-                transform: scale(0.97);
-                box-shadow: inset -5px -5px 5px #ffffff73,
-                inset  7px 7px 5px rgba(94,104,121,0.200);
-              
-                 a{
-                    transform: scale(0.95);
-                    color: rgb(237, 80, 211);
-                   // color: gold;
+            .box-titre{
+                display: flex;
+                //border: 1px solid red;
+                position: relative;
+
+                img{
+                    position: absolute;
+                    width: 3vw;
+                    height: 6vh;
+                    bottom: 6%;
+                    left:35%;
+                    z-index: 10;
                 }
-            }
-           
-        }
-        .box-titre-code{
-            margin-right: -1.2vw;
-            z-index: 1;
-        }
-      
+                .box-titre-code,.box-titre-graph{
+                   
+                    width: 14vw;
+                    height:  28vh;
+                    background-color: #e3edf7;
+                    border-radius: 50%;
+                    align-items: center;
+                    padding:auto;
+                    position: relative;
+                    padding: 5.5%;
+
+                    .titre-developper,.titre-graphiste{
+                        font-size: 1.6rem;
+                        text-decoration: none;
+                        outline:none;
+                        border: none;
+                        background-color: white;
+                        width: 11vw;
+                        height:  22vh;
+                        border-radius: 50%;
+                        margin: auto;
+                        box-shadow: 6px 6px 8px rgb(163, 177, 198, 0.6),
+                        -6px -6px 12px rgba(255, 255, 255, 0.5);
+                        transition: transform 0.4s;
+                    
+                    }
+                    .titre-developper:hover, .titre-graphiste:hover{
+                        //background: #e3edf7; 
+                        border: 2px solid white;
+                        transform: scale(0.97);
+                        box-shadow: inset -5px -5px 5px #ffffff73,
+                        inset  7px 7px 5px rgba(94,104,121,0.200);
+                    
+                        a{
+                            transform: scale(0.95);
+                            color: rgb(237, 80, 211);
+                        // color: gold;
+                        }
+                    }
+                
+                }
+                .box-titre-code{
+                    margin-right: -1.3vw;
+                    z-index: 1;
+
+                }
+
+           }
        }
     }
 }
