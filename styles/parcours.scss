@@ -1,0 +1,69 @@
+.parcour{
+    padding: 7% 8%;
+    position: relative;
+
+    .container-parcour{
+        display: flex;
+        height: 60vh;
+        //border: 1px solid red;
+
+        .box-lje, 
+        .box-cess , 
+        .box-esa, 
+        .container-2020{
+            width: 25vw;
+           // border: 1px solid aqua;
+        }
+        
+        .trait-contour{
+            border: 2px solid gray;
+            height: 28vh;
+            width: 14vw;
+            border-radius: 50%;
+            padding:  7%;
+            margin: auto;
+            margin-bottom: 5vh;
+
+            .contour{
+            border: 1px solid gray;
+            background-color: gray;
+            height: 22vh;
+            width: 11vw;
+            border-radius: 50%;
+            padding: 9%;
+            }
+            .inter{
+                background-color: white;
+                height: 18vh;
+                width: 9vw;
+                border-radius: 50%;
+
+            }
+        }
+    }
+
+    .box-aide-emploi{
+        //border: 1px solid red;
+        width: 25.5vw;
+        position: absolute;
+        right:36.7vw ;
+
+        h4{
+            text-align: center;
+            padding-right: 0.8vw;
+        }
+
+        .aide-emploi{
+            display: flex;
+            padding: 0vh 2vw;
+           
+            .trait{
+                background:gray;
+                height: 3vh;
+                width: 0.1vw;
+                border-radius: 5rem;
+                margin:0vh 0.8vw;
+            }
+        }
+    }
+}

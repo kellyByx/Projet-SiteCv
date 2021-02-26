@@ -1,15 +1,62 @@
 .accueil{
-    padding: 8%;
+    padding: 8% 10%;
     .container-accueil{
         //border: 1px solid blue;
         width: 82vw;
         height: 65vh;
+       
 
-        .mot-acceuil{
-            height: 24vh;
-            border: 1px solid greenyellow;
+        .fond-acceuil{
+            width: 62vw;
+            height: 30vh;
+            display: flex;
+            justify-content: space-between;
             margin-bottom: 1vh;
+            padding:1.5% 2%;
+            margin-left: 10vw;
+            box-sizing: border-box;
+            border-radius: 16px;
+            background-color:#e3edf7;
+            box-shadow:  -4px -4px 5px #ffffff73,  7px 7px 5px rgba(94,104,121,0.200);
+            border: 5px solid #e3edf7;
 
+            .gauche-msg{
+              
+                width: 20vw;
+                height: 24vh;
+                background-color: white;
+                border-radius: 5%;
+                border: 5px solid #e3edf7;  
+                box-shadow:  -4px -4px 5px #ffffff73,  7px 7px 5px rgba(94,104,121,0.200);
+            }
+
+            .contour-msg-acceuil{
+                border-radius: 15px;
+                box-shadow:  -5px -5px 5px #ffffff73,
+                inset -5px -5px 5px #ffffff73,
+                7px 7px 5px rgba(94,104,121,0.200), 
+                inset 7px 7px 5px rgba(94,104,121,0.200);
+                width: 35vw;
+                height: 24vh;
+                padding: 1rem;
+            
+
+                .msg-acceuil{
+                   
+                    //border: 1px solid red;
+                    width: 32.8vw;
+                    height: 20vh;
+                    background-color: white;
+                    border-radius:10px ;
+                    color:grey;
+                    padding-top:1rem;
+                    padding: 1% 5%;
+                    h1{
+                        text-align: center;
+                    }
+                    
+                }
+            }
         }
         
        .container-titres{
@@ -41,15 +88,6 @@
                 height:  26vh;
                 border-radius: 50%;
                 margin: auto;
-               
-               /*margin: 0;
-                position: absolute;
-                top: 50%;
-                left: 50%;
-                -ms-transform: translate(-50%, -50%);
-                transform: translate(-50%, -50%);
-                */
-               
                 box-shadow: 6px 6px 8px rgb(163, 177, 198, 0.6),
                 -6px -6px 12px rgba(255, 255, 255, 0.5);
                 transition: transform 0.4s;
@@ -62,15 +100,17 @@
                 box-shadow: inset -5px -5px 5px #ffffff73,
                 inset  7px 7px 5px rgba(94,104,121,0.200);
               
-                a{
+                 a{
                     transform: scale(0.95);
-                     color: purple;
+                    color: rgb(237, 80, 211);
+                   // color: gold;
+                
                 }
             }
            
         }
         .box-titre-code{
-            margin-right: -1.4vw;
+            margin-right: -1.2vw;
             z-index: 1;
         }
       
