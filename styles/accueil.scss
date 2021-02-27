@@ -11,7 +11,7 @@
             justify-content: space-between;
             margin-bottom: 3.5vh;
             padding:1.5% 2%;
-            margin-left: 10vw;
+            margin-left: 11vw;
       
             .trait{
                 background:gray;
@@ -42,6 +42,7 @@
                 color:grey;
                 padding: 1%;
 
+              
                 a:hover{
                     color: rgb(237, 80, 211);
                 }
@@ -55,18 +56,41 @@
         box-shadow:  -4px -4px 5px #ffffff73,   7px 7px 5px rgba(94,104,121,0.200);
         border-radius: 16px;
         height: 40vh;
-        width: 65.5vw;
+        width: 67vw;
         padding: 2%;
         align-items: center;
-        padding-left: 1vw;
+        padding-left: 3vw;
+        padding-right: 3vw;
         margin-left: 6vw;
 
-       
+        .img-chemin{
+           //border: 1px solid red;
+           width: 17vw;
+           display:block;
+        //    max-width: 19vw;
+           height: 23.5vh;
+           -moz-background-size: 100% 100%;
+            -webkit-background-size: 100% 100%;
+            background-size: 100% ;
+            background-repeat: no-repeat;
+            margin-top: 3vh;
+        }
+        .chemin-droit{
+               background-image: url(/static/chemin_droit.jpg);
+               //background-size: cover;  
+        }
+        .chemin-gauche{
+            background-image: url(/static/chemin_gauche.jpg);
+            //background-size: cover;
+        }
 
             .box-titre{
                 display: flex;
-                //border: 1px solid red;
+
                 position: relative;
+              //  border: 1px solid red;
+                width: 27vw;
+                height: 29vh;
 
                 img{
                     position: absolute;
@@ -100,6 +124,9 @@
                         box-shadow: 6px 6px 8px rgb(163, 177, 198, 0.6),
                         -6px -6px 12px rgba(255, 255, 255, 0.5);
                         transition: transform 0.4s;
+                        a{
+                            text-decoration:underline;
+                         }
                     
                     }
                     .titre-developper:hover, .titre-graphiste:hover{
