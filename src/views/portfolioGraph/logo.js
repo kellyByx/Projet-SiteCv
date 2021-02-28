@@ -1,8 +1,8 @@
 export const logoView = `
 <div class="gallery-box" >
-    <img src="../../static/images/img3.jpg" id="gallery" />
+    <img src="./images/img3.jpg" id="gallery" />
 </div>
 <div class="gallery-box">
-    <img src="../../static/images/img4.jpg" id="gallery" />
+    <img src="./images/img4.jpg" id="gallery" />
 </div>
 `;

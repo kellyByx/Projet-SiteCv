@@ -85,9 +85,9 @@ function scrollToSection(id) {
 // -------- switch portfolio ------------------
 
 // portfolio developer= a gauche
-const portfolioDeveloper = document.getElementById('portfolioDev');
+const portfolioDeveloper = document.getElementById('portfolioDeveloper');
 // const portfolioDeveloper = document.querySelector('portfolioDev');
-const links = document.querySelectorAll('a[href="nav-galery-graph"]');
+const links = document.querySelectorAll('.btn-proj-dev');
 
 links.forEach((link) => {
   link.addEventListener('click', (e) => {
@@ -113,7 +113,8 @@ links.forEach((link) => {
 // porfolio graphisme = a droite:
 const portfolioGraphisme = document.getElementById('portfolioGraphisme');
 // const portfolioGraphisme = document.querySelector('portfolioGraphisme');
-const liens = document.querySelectorAll('a[href="nav-galery-graph"]');
+const liens = document.querySelectorAll('.test1');
+console.log(liens);
 
 liens.forEach((lien) => {
   lien.addEventListener('click', (e) => {
