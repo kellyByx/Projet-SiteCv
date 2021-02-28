@@ -33,7 +33,7 @@
       <div class="menu-fixe menu-gauche">
         <div class="liens-gauche">
           <div class="boutton liens-vertical">
-            <a href="#competence-web">Comptétences</a>
+            <a href="#competence-web">Compétences</a>
           </div>
           <div class="boutton liens-vertical">
             <a href="#portfolio-web">Portfolio</a>
@@ -43,7 +43,7 @@
       <div class="menu-fixe menu-droite">
         <div class="liens-droite">
           <div class="boutton liens-vertical">
-            <a href="#competence-graph">Comptétences</a>
+            <a href="#competence-graph">Compétences</a>
           </div>
           <div class="boutton liens-vertical">
             <a href="#portfolio-graph">Portfolio</a>
@@ -260,7 +260,7 @@
                   Mini-entreprise
                   <a href="https://www.lje.be/fr" target="_blank">Lje</a>
                 </h3>
-                &lt; 2015&gt; &lt;2016/&gt;
+                <!-- &lt; 2015&gt; &lt;2016/&gt; -->
                 <p>
                   Création et gestion d’une mini-entreprise.
                   <br />
@@ -366,30 +366,30 @@
             <div class="container-pg-contact">
               <div class="formulaire">
                 <h3>Contact</h3>
-                <div class="col">
-                  <div class="inputBox">
+                <form
+                  action="https://formspree.io/f/mrgowqra"
+                  target="_blank"
+                  method="POST"
+                >
+                  <div class="col">
                     <div class="text">Nom</div>
-                    <input type="text" name="" required="required" />
+                    <input type="text" name="Nom" required="required" />
                   </div>
-                </div>
-                <div class="col">
-                  <div class="inputBox">
+                  <div class="col">
                     <div class="text">Mail</div>
-                    <input type="text" name="" required="required" />
+                    <input type="text" name="Mail" required="required" />
                   </div>
-                </div>
-                <div class="col">
-                  <div class="inputBox">
+                  <div class="col">
                     <div class="text">Message</div>
-                    <textarea required="required"></textarea>
+                    <textarea name="message" required="required"></textarea>
                   </div>
-                </div>
-                <div class="col">
-                  <!--<input class="btn-envoyer" type="submit" value="Envoyer" />-->
-                  <button class="btn-envoyer">
-                    <i class="fas fa-paper-plane"></i>
-                  </button>
-                </div>
+                  <div class="col">
+                    <!--<input class="btn-envoyer" type="submit" value="Envoyer" />-->
+                    <button class="btn-envoyer">
+                      <i class="fas fa-paper-plane"></i>
+                    </button>
+                  </div>
+                </form>
               </div>
               <div class="containerDroit">
                 <div class="box-info">
@@ -543,7 +543,7 @@
         <section class="page graphisme-portfolio" id="portfolio-graph">
           <div class="themes">
             <div>
-              <h3>Quelque projets</h3>
+              <h3>Quelques projets</h3>
               <div class="box-btn" id="btn-portfolioGraph">
                 <button class="test1" id="nav-affiches">
                   <img src="./static/mspg.png" alt="icone affiche" />
@@ -571,7 +571,17 @@
             </div>
           </div>
           <div class="container-galery">
-            <div class="blc-galery" id="portfolioGraphisme"></div>
+            <div class="blc-galery" id="portfolioGraphisme">
+              <br />
+              <br />
+              <br />
+              <br />
+              <p>
+                &emsp;&emsp;&emsp;&emsp; Archivages en cours... <br />
+                &emsp;&emsp;&emsp;=> actuellement quelques images de mon voyage
+                au japon sont dans mes différents bouttons
+              </p>
+            </div>
           </div>
         </section>
       </div>

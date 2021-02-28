@@ -27,6 +27,7 @@
                 font-size: 0.9rem;
                 line-height: 1.5rem;
                 color: gray;
+                text-align: center;
             }
 
             .bulle{
@@ -45,9 +46,9 @@
         }
         .box-lje{
             .bulle{
-                color:gray;
-                border: 2px solid rgb(228, 206, 40);
-                background-color: white;//rgb(243,218,38);
+               // color:gray;
+                border: 2px solid 243,218,38;//rgb(228, 206, 40);
+                background-color:rgb(243,218,38);// white;
             }
             .inter{
 
@@ -90,8 +91,9 @@
         }
         .container-2020{
             .bulle{
-                border: 1px solid rgb(231,68,135);
-                background-color: rgb(231,68,135);
+                color: rgb(231,68,135);
+                border: 2px solid rgb(231,68,135);
+                background-color: white;// rgb(231,68,135)
             }
             .inter{
 

@@ -88,6 +88,7 @@ function scrollToSection(id) {
 const portfolioDeveloper = document.getElementById('portfolioDeveloper');
 // const portfolioDeveloper = document.querySelector('portfolioDev');
 const links = document.querySelectorAll('.btn-proj-dev');
+console.log(links);
 
 links.forEach((link) => {
   link.addEventListener('click', (e) => {
