@@ -6,22 +6,25 @@
 
     .fond-acceuil {
       //border: 1px solid red;
-      width: 48.5vw;
+      width: 50vw;
       height: 23vh;
       display: flex;
       justify-content: space-between;
       margin-bottom: 2%;
       //padding: 1.5% 2%;
-      margin-left: 15%;
+      margin-left: 12%;
 
       .trait {
+        //border: 1px solid red;
         background: gray;
-        height: 20vh;
+        height: 19vh;
         width: 0.2vw;
         border-radius: 5%;
+        margin:0 2%;
       }
       .bvn-titre {
         height: 15vh;
+        width: 20vw;
         //border: 1px solid red;
         line-height: 0.9rem;
         //padding: 0;
