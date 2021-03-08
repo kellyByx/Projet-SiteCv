@@ -10,54 +10,58 @@
         background-color:#e3edf7;
         box-shadow: inset -4px -4px 5px #ffffff73, inset  7px 7px 5px rgba(94,104,121,0.200);
         border: 5px solid #e3edf7;
+        // position: relative;
         h3{
             font-size: 1.6rem;
             text-align: center;
             background: white;
             width: 17vw;
-            height: 8vh;
+            //height: 8vh;
             margin: 1.6rem auto 0.5rem;
             padding: 1rem;
             border-radius: 16px;
             box-shadow: inset -4px -4px 5px #ffffff73, inset  7px 7px 5px rgba(94,104,121,0.200);
         }
-        .box-btn{
-            display: flex;
-            justify-content: space-around;
-            width: 20vw;
-            margin: auto;
-       
-            button{
-                margin: 1rem auto;
-                padding: auto;
-                width: 6vw;
-                height: 13vh;
-                
-                border: none;
-                background-color: #e3edf7;
-                box-shadow: -4px -4px 5px rgba(255, 255, 255, 0.907),6px 6px 5px rgba(50, 55, 65, 0.2);
-                overflow: hidden;
-                outline: none;
-                border-radius: 16px;
-                transition: transform 0.4s;
-            
-                
-                   
-                  
+
+        .container-btn{
+            // position: absolute;
+            // top: 2vh;
+            .box-btn{
+                display: flex;
+                justify-content: space-around;
+                width: 18vw;
+                margin: auto;
+                //border: 1px solid red;
+        
+                button{
+                    margin: 6% auto;
+                    padding: auto;
+                    width: 5.5vw;
+                    height: 12vh;
+                    
+                    border: none;
+                    background-color: #e3edf7;
+                    box-shadow: -4px -4px 5px rgba(255, 255, 255, 0.907),6px 6px 5px rgba(50, 55, 65, 0.2);
+                    overflow: hidden;
+                    outline: none;
+                    border-radius: 16px;
+                    transition: transform 0.4s;
+                    
+                        img{
+                            width: 2.7vw;
+                        }
+                    
+                }
+
+                button:hover{
+                    box-shadow:  inset -5px -5px 5px #ffffff73,
+                    inset  7px 7px 5px rgba(94,104,121,0.200);
+                    transform: scale(0.95);           
+
                     img{
-                        width: 3vw;
+                    transform: scale(0.96);
+                    //background: rgb(210, 155, 247);;
                     }
-                
-            }
-
-            button:hover{
-                box-shadow:  inset -5px -5px 5px #ffffff73,
-                inset  7px 7px 5px rgba(94,104,121,0.200);
-                transform: scale(0.95);           
-
-                img{
-                transform: scale(0.96);
-                //background: rgb(210, 155, 247);;
                 }
             }
         }
@@ -69,28 +73,58 @@
         width: 60vw;      
         border-radius: 16px;
         background-color:#e3edf7;
-        box-shadow: inset -4px -4px 5px #ffffff73, inset  7px 7px 5px rgba(94,104,121,0.200);
+        box-shadow: inset -6px -6px 4px #ffffff73, inset  7px 7px 5px rgba(94,104,121,0.200);
         border: 5px solid #e3edf7;
-        .blc-galery{
-            display: flex;
+        overflow: hidden;
+  
+
+            //---------------------slider automatique que en css:
+             .blc-galery{
+            //   display: flex;
             margin-top: 10vh;
             background: white;
             height: 45vh;
-            width: 52vw;
-            box-shadow: inset -4px -4px 5px #ffffff73, inset  7px 7px 5px rgba(94,104,121,0.200);
+            box-shadow: inset -4px -4px 5px rgba(94,104,121,0.200), inset  7px 7px 5px rgba(94,104,121,0.200);
+            border: 3px solid white;
             
+            // width: calc(250px * 12); /* nombre image =>12 */
+            // animation: scroll 60s linear infinite;
+             }
+
+            .animation-gallery{
+                display: flex;
+                width: calc(250px * 12); /* nombre image =>12 */
+                animation: scroll 60s linear infinite;
+              
+            
+
+                @keyframes scroll {
+                    0% {
+                        transform: translateX(0);
+                    }
+                    100% {
+                        transform: translateX(calc(-250px * 6)); /*nbr img divisé par 2 =>6*/
+                    }
+                }
+
             .gallery-box{
     
                 max-width:220px;
                 margin:auto;
+                display: flex;
+                align-items: center;
+                padding: 15px;
+
                 img{
                     width: 100%;
                     border:0.4rem solid rgba(165, 149, 149, 0.2);
                     box-sizing: border-box;
             
                 }
+
             } 
         }
     
     }
 }
+

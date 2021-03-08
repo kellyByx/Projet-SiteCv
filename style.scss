@@ -10,6 +10,8 @@
 @import "./styles/parcours.scss";
 @import "./styles/contact.scss";
 
+
+
 *{
     box-sizing: border-box;
 }
@@ -235,8 +237,8 @@ a:hover{
     }
 }
 
-// 1366 x 768 pixels
-@media only screen and (max-width: 1366px) {
+// 1366 x 768 pixels?
+@media only screen and (max-width: 1024px) {
     body{
         .display-none{
             display:none;

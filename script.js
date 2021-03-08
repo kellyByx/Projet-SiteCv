@@ -114,7 +114,7 @@ links.forEach((link) => {
 // porfolio graphisme = a droite:
 const portfolioGraphisme = document.getElementById('portfolioGraphisme');
 // const portfolioGraphisme = document.querySelector('portfolioGraphisme');
-const liens = document.querySelectorAll('.test1');
+const liens = document.querySelectorAll('.btn-proj-graph');
 console.log(liens);
 
 liens.forEach((lien) => {
