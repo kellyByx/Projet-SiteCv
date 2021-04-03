@@ -4,7 +4,6 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" type="image/png" href="/static/m.png" />
-     
 
     <title>Bruyninx Kelly</title>
   </head>
@@ -59,7 +58,7 @@
         <div class="container-gauche">
           <section class="page web-developper-competence" id="competence-web">
             <div class="categorie-competence">
-              <div class="fond-cmpts">
+              <!-- <div class="fond-cmpts">
                 <button class="contenu-cmpts-1">Front-end</button>
               </div>
               <div class="fond-cmpts">
@@ -76,7 +75,7 @@
               </div>
               <div class="fond-cmpts">
                 <button class="contenu-cmpts-1">Serveurs Web</button>
-              </div>
+              </div>-->
             </div>
             <div class="contour-clavier">
               <div class="clavier">
@@ -192,8 +191,127 @@
                   <i class="far fa-circle"></i>
                 </button>
               </div>
-              <div class="box-slider">
-                <div class="box-style" id="portfolioDeveloper"></div>
+
+              <div class="box-style" id="portfolioDeveloper">
+                <!-- Debut liste/ slides projets-->
+                <div class="projets slides">
+                  <div>
+                    <img src="./static/siteCv.jpg" alt="1" />
+
+                    <h3>Robot</h3>
+                    <p>
+                      Projet réaliser lors du hackaton "decode&code"
+                      d'interface3 (3 jours). Avec dans la team une autre wad, 2
+                      game et une front-end.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="projets slides">
+                  <div>
+                    <img src="./static/siteCv.jpg" alt="2" />
+
+                    <h3>Sous-Marin</h3>
+                    <p>
+                      Suite à une journée découverte d'OpenSCAD, j'ai réaliser
+                      un sous-marin inspiré d'une illustration.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="projets slides">
+                  <div>
+                    <img src="./static/siteCv.jpg" alt="3" />
+
+                    <h3>Hackerflix</h3>
+                    <p>
+                      exercices de préparation a l'epreuve Javascript: Site qui
+                      affiches divers films. Ils peuvent être trier du plus
+                      récent ou non avec un accès aux résumés.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="projets slides">
+                  <div>
+                    <img src="./static/siteCv.jpg" alt="4" />
+
+                    <h3>Projet Site Cv</h3>
+                    <p>
+                      Premier projet de ma formation. Il est réaliser en html,
+                      css, javascript ( Vanilla). Avec la contraintes de ne pas
+                      utiliser Jquery, bootstrap , etc...
+                    </p>
+                  </div>
+                </div>
+
+                <div class="projets slides">
+                  <div>
+                    <img src="./static/siteCv.jpg" alt="5" />
+
+                    <h3>Horoscope chinois</h3>
+                    <p>
+                      Site d'horoscope chinois: il permet de trouver son signe
+                      en foncctione de son année de naissance.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="projets slides">
+                  <div>
+                    <img src="./static/siteCv.jpg" alt="6" />
+
+                    <h3>Projet Zoo</h3>
+                    <p>
+                      Application web en asp.net (mvc) sur un "gestionnaire" de
+                      zoo pour les soigneurs. Il permet a ceux-ci d'encode les
+                      animaux dans leurs enclos, leurs traitement,etc.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="projets slides">
+                  <div>
+                    <img src="./static/siteCv.jpg" alt="7" />
+
+                    <h3>Projet symfony</h3>
+                    <p>
+                      Projet en cours de création: à venir fin mai/ debut juin
+                      2021
+                    </p>
+                  </div>
+                </div>
+
+                <div class="projets slides">
+                  <div>
+                    <img src="./static/siteCv.jpg" alt="8" />
+
+                    <h3>A venir</h3>
+                    <p>
+                      Projet en cours de création: à venir fin mai/ debut juin
+                      2021
+                    </p>
+                  </div>
+                </div>
+
+                <!-- fin liste/ slides projets-->
+                <a type="button" id="retour"
+                  ><i class="fas fa-angle-left"></i
+                ></a>
+                <a type="button" id="suivant"
+                  ><i class="fas fa-angle-right"></i
+                ></a>
+                <br />
+                <div class="box-puces">
+                  <span class="puce" id="puce1">•</span>
+                  <span class="puce" id="puce2">•</span>
+                  <span class="puce" id="puce3">•</span>
+                  <span class="puce" id="puce4">•</span>
+                  <span class="puce" id="puce5">•</span>
+                  <span class="puce" id="puce6">•</span>
+                  <span class="puce" id="puce7">•</span>
+                  <span class="puce" id="puce8">•</span>
+                </div>
               </div>
               <!-- https://github.com/phamthuyngan/Hackaton2020 -->
             </div>
@@ -213,7 +331,7 @@
                   <div class="msg-acceuil">
                     <p>
                       Je m'appelle Kelly Bruyninx, j'ai 24 ans.<br />
-                      Je suis graphiste & web developper Junior.
+                      Je suis web developper Junior & graphiste.
                     </p>
                     <p>
                       Ce site a été réalisé afin de vous invitez à me
@@ -582,13 +700,14 @@
               </div>
             </div>
             <div class="container-galery" id="portfolioGraphisme">
-              <div class="blc-galery" >
+              <div class="blc-galery">
                 <br />
                 <br />
                 <br />
                 <br />
                 <p>
-                  &emsp;&emsp;&emsp;&emsp; Archivage des projets graphiques en cours... <br />
+                  &emsp;&emsp;&emsp;&emsp; Archivage des projets graphiques en
+                  cours... <br />
                   &emsp;&emsp;&emsp;=> actuellement des images test de mon
                   voyage au japon sont présentes via les boutons
                 </p>

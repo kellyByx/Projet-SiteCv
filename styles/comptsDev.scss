@@ -19,6 +19,7 @@
         .fond-cmpts{
             background-color:#dde1e7; //rgb(241,241,241) 
             border-radius: 60px;
+            // ancienne couleur (gris): #dde1e7
             box-shadow: inset -2px -2px 2px #ffffff73, inset 3px 3px 1px rgba(94,104,121,0.200);
             padding:0.5rem; 
             //transition: transform 0.4s;
@@ -54,8 +55,8 @@
   
 }
 .contour-clavier{
-   
-    margin: auto;
+    
+    margin: 5vh auto;
     height: 58vh;
     width: 76vw;
     padding:3%;//rem

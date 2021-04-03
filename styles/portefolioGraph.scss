@@ -85,7 +85,8 @@
             background: white;
             height: 45vh;
             box-shadow: inset -4px -4px 5px rgba(94,104,121,0.200), inset  7px 7px 5px rgba(94,104,121,0.200);
-            border: 3px solid white;
+            border-top: 3px solid white;
+            border-bottom: 3px solid white;
             
             // width: calc(250px * 12); /* nombre image =>12 */
             // animation: scroll 60s linear infinite;

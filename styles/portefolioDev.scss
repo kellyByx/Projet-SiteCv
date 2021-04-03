@@ -1,97 +1,141 @@
 .web-developper-portfolio{
-  padding: 8rem ;
+  padding: 10rem ;
 
   .container-portfolio-dev{
     width: 85vw;
     height: 65vh;
     display: flex;
     justify-content: space-around;
-    //border: 1px solid red;
+ 
+    .box-style{    
+    
+      width: 40vw;
+      height: 55vh;
+      padding: 2%;
+      border-radius: 10px;
+      border: 5px solid #e3edf7;
+      box-shadow: -4px -4px 5px #ffffff73, 7px 7px 5px rgba(94, 104, 121, 0.2);
+      // background: #e3edf7;//linear-gradient( to left,  #e3edf7 13%,#F59ABD );
+      //  box-shadow: inset 4px 4px 6px -1px rgba(0,0,0,0.2), inset 4px 4px 6px -1px rgba(255,255,255,0.7);
+      position: relative;
 
-    .btn-projets{
-      //border: 1px solid aqua;
+       .projets{
+         width: 380px;
+         height: 40vh;
+       // border:1px solid red;
+        // text-align: center;
+        margin: auto;
+        display: none;
+
+         img{
+          display: block;
+          margin: auto;
+           width: 350px;
+          border-radius: 10px;
+          margin-bottom: 30px; 
+          }
+        }
+       #retour,
+       #suivant {
+         cursor: pointer;
+         position: absolute;
+         top: 44%;
+         color: white;
+         font-size: 2rem;
+         transition: 0.6s ease;
+         width: 40px;
+         height: 40px;
+         border-radius: 50%;
+         padding-top: 3px;
+         text-align: center;
+         background-color:#e3edf7;// rgba(172, 170, 170, 0.3);
+        //  color:gray;
+         justify-content: center;
+         align-items: center;
+         box-shadow: -5px -5px 5px #ffffff73,6px 6px 5px rgba(50, 55, 65, 0.2);
+     
+       }
+       #suivant {
+         right: 40px;
+       }
+       #retour {
+         left: 40px;
+       }
+       #retour:hover,
+       #suivant:hover {
+         color: rgb(237, 80, 211);
+         box-shadow: inset 4px 4px 6px -1px rgba(0,0,0,0.2), inset 4px 4px 6px -1px rgba(255,255,255,0.7),
+         -0.5px -0.5px 0px  rgba(255,255,255,1),  0.5px 0.5px 0px  rgba(0,0,0,0.15), 0px 12px 10px -10px rgba(0,0,0,0.5);
+        
+        // transform: translate(2px);
+         transform: scale(0.95);
+       }
+
+     }
+     .box-puces{
+      // border: 1px solid red;
+       margin: auto;
+       width: 15vw;
+       height: 7vh;
+       padding: 0;
+       .puce {
+         cursor: pointer;
+         color: #bbb;
+         font-size: 3.5rem;
+         display: inline-block;
+         margin-top: -15px;
+         /* // transition: background-color 0.6s ease; */
+       }
+      
+       .active,
+       .puce:hover {
+         color: rgb(237, 80, 211);
+       }
+     }
+      
+   }
+ }
+
+
+
+
+//-------------ancienne idée de boutons: --------
+
+  .btn-projets{
+       //border: 1px solid aqua;
       width: 5vw;
       height: 63vh;
       margin: auto 0 auto 0;
       //background-color:#F59ABD; //#A148C2;//#8B72F5;//rgba(228, 179, 46, 0.952);//8A7C8F //#C25D53;
-      background: rgb(238,174,202);
-      border-radius: 20px;
-      padding: 1.1rem;
-      box-shadow: inset 0px 0px 15px rgba(0,0,0,0.08);
+       // background: rgb(238,174,202);
+       // border-radius: 20px;
+       // padding: 1.1rem;
+       // box-shadow: inset 0px 0px 15px rgba(0,0,0,0.08);
           
-        button{
-          color:gray;
-          display: block;
-           border-radius: 50px;
-          height: 5vh;
-          width: 2.5vw;
-          font-size: 1.4rem;
-          justify-content: center;
-          align-items: center;
-          margin-bottom:4vh ;
-          display: flex;
-          box-shadow: -5px -5px 5px #ffffff73,6px 6px 5px rgba(50, 55, 65, 0.2);
-          overflow: hidden;
-          outline: none;
-          border: none;
-          transition: transform 0.4s;
-        }
-            
-        button:hover{
-          box-shadow: inset 4px 4px 6px -1px rgba(0,0,0,0.2), inset 4px 4px 6px -1px rgba(255,255,255,0.7),
-          -0.5px -0.5px 0px  rgba(255,255,255,1),  0.5px 0.5px 0px  rgba(0,0,0,0.15), 0px 12px 10px -10px rgba(0,0,0,0.5);
-          color:#F59ABD;
-          // transform: translate(2px);
-          transform: scale(0.95);
-        }
-      }
-
-      .box-slider{
-        width: 50vw;
-        //border: 1px solid orange;
-        margin: 1rem;
-           
-        .box-style{
-         display: flex;
-         justify-content: center;
-         align-items: center;
-         height: 100%;
-         background: linear-gradient( to left,  #e3edf7 12%,#F59ABD );
-         border-radius: 20px;
-         box-shadow: inset 4px 4px 6px -1px rgba(0,0,0,0.2), inset 4px 4px 6px -1px rgba(255,255,255,0.7);
-          
-         .gallery-projets{
-          max-width:220px;
-          margin:auto;
+         button{
+           color:gray;
+           display: block;
+            border-radius: 50px;
+           height: 5vh;
+           width: 2.5vw;
+           font-size: 1.4rem;
+           justify-content: center;
+           align-items: center;
+           margin-bottom:4vh ;
+           display: flex;
+           box-shadow: -5px -5px 5px #ffffff73,6px 6px 5px rgba(50, 55, 65, 0.2);
+           overflow: hidden;
+           outline: none;
+           border: none;
+           transition: transform 0.4s;
          }
-          /* .color {
-            position: absolute;
-            filter: blur(150px);
-          }
-                  
-          .color:nth-child(1) {
-            top: -350px;
-            width: 600px;
-            height: 600px;
-            background: #ff359b;
-          }
-                  
-          .color:nth-child(2) {
-            top: -150px;
-            left: 100px;
-            width: 500px;
-            height: 500px;
-            background: #ffdd87;
-          }
-                  
-          .color:nth-child(3) {
-            bottom: 50px;
-            right: 100px;
-            width: 300px;
-            height: 300px;
-            background: #00d2ff;
-          }*/
-        }
-      }
-  }
-}
+            
+         button:hover{
+           box-shadow: inset 4px 4px 6px -1px rgba(0,0,0,0.2), inset 4px 4px 6px -1px rgba(255,255,255,0.7),
+           -0.5px -0.5px 0px  rgba(255,255,255,1),  0.5px 0.5px 0px  rgba(0,0,0,0.15), 0px 12px 10px -10px rgba(0,0,0,0.5);
+           color:#F59ABD;
+          // transform: translate(2px);
+           transform: scale(0.95);
+         }
+       }    
+  

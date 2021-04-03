@@ -4,13 +4,13 @@ import { typographieView } from './src/views/portfolioGraph/typographies';
 import { tfeView } from './src/views/portfolioGraph/tfe';
 import { photosView } from './src/views/portfolioGraph/photos';
 import { plusView } from './src/views/portfolioGraph/plus';
-import { projet1View } from './src/views/portfolioDev/projet1';
-import { projet2View } from './src/views/portfolioDev/projet2';
-import { projet3View } from './src/views/portfolioDev/projet3';
-import { projet4View } from './src/views/portfolioDev/projet4';
-import { projet5View } from './src/views/portfolioDev/projet5';
-import { projet6View } from './src/views/portfolioDev/projet6';
-import { projet7View } from './src/views/portfolioDev/projet7';
+// import { projet1View } from './src/views/portfolioDev/projet1';
+// import { projet2View } from './src/views/portfolioDev/projet2';
+// import { projet3View } from './src/views/portfolioDev/projet3';
+// import { projet4View } from './src/views/portfolioDev/projet4';
+// import { projet5View } from './src/views/portfolioDev/projet5';
+// import { projet6View } from './src/views/portfolioDev/projet6';
+// import { projet7View } from './src/views/portfolioDev/projet7';
 import './style.scss';
 
 // aller directement au chargement de la page :
@@ -82,34 +82,7 @@ function scrollToSection(id) {
   }
 }
 
-// -------- switch portfolio ------------------
-
-// portfolio developer= a gauche
-const portfolioDeveloper = document.getElementById('portfolioDeveloper');
-// const portfolioDeveloper = document.querySelector('portfolioDev');
-const links = document.querySelectorAll('.btn-proj-dev');
-console.log(links);
-
-links.forEach((link) => {
-  link.addEventListener('click', (e) => {
-    const id = e.target.matches.id;// e.currentTarget.id; // link.id;
-    if (id === 'nav-projet1') {
-      portfolioDeveloper.innerHTML = projet1View;
-    } else if (id === 'nav-projet2') {
-      portfolioDeveloper.innerHTML = projet2View;
-    } else if (id === 'nav-projet3') {
-      portfolioDeveloper.innerHTML = projet3View;
-    } else if (id === 'nav-projet4') {
-      portfolioDeveloper.innerHTML = projet4View;
-    } else if (id === 'nav-projet5') {
-      portfolioDeveloper.innerHTML = projet5View;
-    } else if (id === 'nav-projet6') {
-      portfolioDeveloper.innerHTML = projet6View;
-    } else if (id === 'nav-projet7') {
-      portfolioDeveloper.innerHTML = projet7View;
-    }
-  });
-});
+// -------- "switch" portfolio graphisme : img ------------------
 
 // porfolio graphisme = a droite:
 const portfolioGraphisme = document.getElementById('portfolioGraphisme');
@@ -135,3 +108,115 @@ liens.forEach((lien) => {
     }
   });
 });
+
+// // portfolio developer= a gauche
+// const portfolioDeveloper = document.getElementById('portfolioDeveloper');
+// // const portfolioDeveloper = document.querySelector('portfolioDev');
+// const links = document.querySelectorAll('.btn-proj-dev');
+// console.log(links);
+
+// links.forEach((link) => {
+//   link.addEventListener('click', (e) => {
+//     const id = e.target.matches.id;// e.currentTarget.id; // link.id;
+//     if (id === 'nav-projet1') {
+//       portfolioDeveloper.innerHTML = projet1View;
+//     } else if (id === 'nav-projet2') {
+//       portfolioDeveloper.innerHTML = projet2View;
+//     } else if (id === 'nav-projet3') {
+//       portfolioDeveloper.innerHTML = projet3View;
+//     } else if (id === 'nav-projet4') {
+//       portfolioDeveloper.innerHTML = projet4View;
+//     } else if (id === 'nav-projet5') {
+//       portfolioDeveloper.innerHTML = projet5View;
+//     } else if (id === 'nav-projet6') {
+//       portfolioDeveloper.innerHTML = projet6View;
+//     } else if (id === 'nav-projet7') {
+//       portfolioDeveloper.innerHTML = projet7View;
+//     }
+//   });
+// });
+
+// -------- slider/carousel portfolio Developer ------------------
+
+let slideActuelle = 1;
+const slides = document.getElementsByClassName('slides');
+const puces = document.getElementsByClassName('puce');
+
+// permet de changer de slide au clic d'une puce
+function activePuceSlide(slideIndex) {
+  for (let i = 0; i < slides.length; i++) {
+    slides[i].style.display = 'none';
+    puces[i].style.color = '#bbb';
+  }
+  slides[slideIndex - 1].style.display = 'flex';
+  puces[slideIndex - 1].style.color = 'rgb(237, 80, 211)';
+}
+
+//= >slide a celle actuelle= celle visible
+function ObtenirSlideActuelle() {
+  for (let i = 0; i < puces.length; i++) {
+    if (puces[i].style.color === 'rgb(237, 80, 211)') {
+      slideActuelle = i + 1;
+    }
+  }
+  return slideActuelle;
+}
+
+function afficherSlide(slideIndex) {
+  if (slideIndex > slides.length) {
+    slideActuelle = 1;
+  }
+  if (slideIndex < 1) {
+    slideActuelle = slides.length;
+  }
+  for (let i = 0; i < slides.length; i++) {
+    slides[i].style.display = 'none';
+    puces[i].style.color = '#bbb';
+  }
+  slides[slideActuelle - 1].style.display = 'flex';
+  puces[slideActuelle - 1].style.color = ' rgb(237, 80, 211)';
+}
+
+function slideSuivante() {
+  slideActuelle = ObtenirSlideActuelle();
+  afficherSlide((slideActuelle += 1));
+}
+
+function slidePrecedente() {
+  slideActuelle = ObtenirSlideActuelle();
+  afficherSlide((slideActuelle -= 1));
+}
+
+window.onload = function () {
+  afficherSlide(slideActuelle);
+  document.getElementById('retour').addEventListener('click', () => {
+    slidePrecedente();
+  });
+  document.getElementById('suivant').addEventListener('click', () => {
+    slideSuivante();
+  });
+  document.getElementById('puce1').addEventListener('click', () => {
+    activePuceSlide(1);
+  });
+  document.getElementById('puce2').addEventListener('click', () => {
+    activePuceSlide(2);
+  });
+  document.getElementById('puce3').addEventListener('click', () => {
+    activePuceSlide(3);
+  });
+  document.getElementById('puce4').addEventListener('click', () => {
+    activePuceSlide(4);
+  });
+  document.getElementById('puce5').addEventListener('click', () => {
+    activePuceSlide(5);
+  });
+  document.getElementById('puce6').addEventListener('click', () => {
+    activePuceSlide(6);
+  });
+  document.getElementById('puce7').addEventListener('click', () => {
+    activePuceSlide(7);
+  });
+  document.getElementById('puce8').addEventListener('click', () => {
+    activePuceSlide(8);
+  });
+};
