@@ -33,18 +33,80 @@
         border: 2px solid #e3edf7;
         padding: 6%;
         box-shadow: -4px -4px 5px #ffffff73, 7px 7px 5px rgba(94, 104, 121, 0.2);
+        
        // box-shadow: inset -4px -4px 5px #ffffff73, inset  7px 7px 5px rgba(94,104,121,0.200);
+        position: relative;
 
          img{
           display: block;
           margin: auto;
            width: 110px;
           border-radius: 10px;
-          margin-bottom: 30px; 
+          margin-bottom: 18px; 
           }
+
+          h3{
+            margin-bottom: -1px;
+          }
+
          .introProjet{
-           font-size: 0.9rem;
-         }
+          font-size: 0.9rem;
+          }
+
+          .fond-btn{
+            position: absolute;
+            width: 52px;
+            height: 52px;
+            background: #e3edf7;          
+            border-radius: 50px;
+            box-shadow: inset -4px -4px 5px #ffffff73, inset  7px 7px 5px rgba(94,104,121,0.200);
+            // box-shadow: -5px -5px 5px #ffffff73, 5px 7px 6px rgba(50, 55, 65, 0.2);
+
+            padding:1.8%;
+
+            right: 15px;
+            bottom: 15px;
+
+            .btn-github,
+            .btn-voir{
+              position: absolute;
+              width: 38px;
+              height: 38px;
+              transition: 0.6s ease;
+              border-radius: 50px;
+              box-shadow: -5px -5px 5px #ffffff73, 2px 7px 6px rgba(50, 55, 65, 0.2);
+              overflow: hidden;
+              outline: none;
+              border: none;
+              background-color: white;
+
+              // right: 15px;
+              // bottom: 15px;
+            }
+
+            .btn-github{
+              padding: 1.5% 1.8%;
+              font-size: 1.6rem;
+            }
+
+            .btn-voir{
+              padding-top: 1%;
+              font-size: 1.2rem;
+
+            }
+
+            .btn-github:hover,
+            .btn-voir:hover{
+              box-shadow: inset 4px 4px 6px -1px rgba(0,0,0,0.2), inset 4px 4px 6px -1px rgba(255,255,255,0.7),
+              -0.5px -0.5px 0px  rgba(255,255,255,1),  0.5px 0.5px 0px  rgba(0,0,0,0.15), 0px 12px 10px -10px rgba(0,0,0,0.5);
+              transform: scale(0.95);
+
+              i{
+                //color:#F59ABD;
+                color: rgb(237, 80, 211);
+              }
+            }
+          }
         }
        #retour,
        #suivant {
@@ -63,8 +125,7 @@
         border: 2px solid white;
         justify-content: center;
         align-items: center;
-        box-shadow: -5px -5px 5px #ffffff73,6px 6px 5px rgba(50, 55, 65, 0.2);
-        transition: transform 0.4s;
+        box-shadow: -5px -5px 5px #ffffff73,6px 6px 5px rgba(50, 55, 65, 0.2)       
      
         }
         #suivant {
@@ -136,7 +197,7 @@
           button{
             color:gray;
             display: block;
-             border-radius: 50px;
+            border-radius: 50px;
             height: 5vh;
             width: 2.5vw;
             font-size: 1.4rem;
