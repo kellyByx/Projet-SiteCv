@@ -1,42 +1,48 @@
  .web-developper-portfolio{
-   padding:9rem 7rem;
+   padding:10% 7%;
 
    .container-portfolio-dev{
-     width: 85vw;
-     height: 65vh;
      display: flex;
      justify-content: space-evenly;
+
+      .github-img{
+        margin-right: -17vw;
+        margin-top: 6vh;
+    
+        img{
+          cursor: pointer;
+          width: 50vh;
+          border-radius: 500px;
+          padding: 1%;
+        }
+      }
  
      .box-style{    
-      //// background-color: #e3edf7;
        width: 40vw;
        height: 60vh;
        padding: 3%;
        border-radius: 10px;
        border: 5px solid #e3edf7;
        box-shadow: inset -4px -4px 5px #ffffff73, inset  7px 7px 5px rgba(94,104,121,0.200);
-       //box-shadow: -4px -4px 5px #ffffff73, 7px 7px 5px rgba(94, 104, 121, 0.2);
        background: #e3edf7;//linear-gradient( to left,  #e3edf7 13%,#F59ABD );
-       //  box-shadow: inset 4px 4px 6px -1px rgba(0,0,0,0.2), inset 4px 4px 6px -1px rgba(255,255,255,0.7);
        position: relative;
 
         .projets{
-         width: 380px;
-         height: 42vh;
-        //// border:5px solid  #e3edf7;
-         // text-align: center;
+        width: 380px;
+        height: 42vh;
         margin: auto;
         display: none;
         border-radius: 16px;
         background-color: white;
-        ////border: 5px solid white;
         border: 2px solid #e3edf7;
         padding: 6%;
         box-shadow: -4px -4px 5px #ffffff73, 7px 7px 5px rgba(94, 104, 121, 0.2);
-        
-       // box-shadow: inset -4px -4px 5px #ffffff73, inset  7px 7px 5px rgba(94,104,121,0.200);
         position: relative;
+        
+        .status{
+          color: gray;
 
+        }
          img{
           display: block;
           margin: auto;
@@ -44,6 +50,7 @@
           border-radius: 10px;
           margin-bottom: 18px; 
           }
+          
 
           h3{
             margin-bottom: -1px;
@@ -60,14 +67,11 @@
             background: #e3edf7;          
             border-radius: 50px;
             box-shadow: inset -4px -4px 5px #ffffff73, inset  7px 7px 5px rgba(94,104,121,0.200);
-            // box-shadow: -5px -5px 5px #ffffff73, 5px 7px 6px rgba(50, 55, 65, 0.2);
-
             padding:1.8%;
-
-            right: 15px;
             bottom: 15px;
 
             .btn-github,
+            .btn-cahier,
             .btn-voir{
               position: absolute;
               width: 38px;
@@ -79,14 +83,16 @@
               outline: none;
               border: none;
               background-color: white;
-
-              // right: 15px;
-              // bottom: 15px;
             }
 
             .btn-github{
               padding: 1.5% 1.8%;
               font-size: 1.6rem;
+            }
+
+            .btn-cahier{
+              font-size: 1.2rem;
+
             }
 
             .btn-voir{
@@ -96,16 +102,22 @@
             }
 
             .btn-github:hover,
+            .btn-cahier:hover,
             .btn-voir:hover{
               box-shadow: inset 4px 4px 6px -1px rgba(0,0,0,0.2), inset 4px 4px 6px -1px rgba(255,255,255,0.7),
               -0.5px -0.5px 0px  rgba(255,255,255,1),  0.5px 0.5px 0px  rgba(0,0,0,0.15), 0px 12px 10px -10px rgba(0,0,0,0.5);
               transform: scale(0.95);
-
               i{
                 //color:#F59ABD;
                 color: rgb(237, 80, 211);
               }
             }
+          }
+          .btn-un{
+            right: 15px;
+          }
+          .btn-deux{
+            right: 78px;
           }
         }
        #retour,
@@ -150,92 +162,34 @@
      .box-puces{
       //border: 1px solid red;
         margin: auto;
-        width: 15vw;
-        height: 5vh;
-        padding: 0;
+        width: 235px;
+        height: 42px;
         background-color: white;
         border-radius: 50px;
-        padding: 3%;
         box-shadow: inset -4px -4px 5px #ffffff73, inset  7px 7px 5px rgba(94,104,121,0.200);
         border: 2px solid white;
+        position: relative;
 
-        .puce {
-          cursor: pointer;
-          color: #bbb;
-          font-size: 3.5rem;
-          display: inline-block;
-          margin-top: -14%;
-         
-//          /* // transition: background-color 0.6s ease; */
+        .puces{
+          position: absolute;
+          bottom:-15px;
+          left:20px;
+
+          .puce {
+            cursor: pointer;
+            color: #bbb;
+            font-size: 3.5rem;
+            display: inline-block;
+           
+  //          /* // transition: background-color 0.6s ease; */
+          }
+          .active,
+          .puce:hover {
+            color: rgb(237, 80, 211);
+          }
+
         }
-      
-      .active,
-      .puce:hover {
-        color: rgb(237, 80, 211);
-      }
     }
       
     }
   }
-
-
-
-
- //-------------ancienne idée de boutons: --------
-
-  .btn-projets{
-       //border: 1px solid aqua;
-       margin-right: -17vw;
-       margin-top: 6vh;
-      
-       
-     
-       img{
-         cursor: pointer;
-         width: 370px;
-         border-radius: 500px;
-         padding: 1%;
-        // box-shadow: inset -4px -4px 5px rgba(94,104,121,0.200), inset  7px 7px 5px rgba(94,104,121,0.200);
-         //box-shadow: -4px -4px 5px rgba(94,104,121,0.200),  7px 7px 5px rgba(94,104,121,0.200);
-       }
-       //background-color:#F59ABD; //#A148C2;//#8B72F5;//rgba(228, 179, 46, 0.952);//8A7C8F //#C25D53;
-       // background: rgb(238,174,202);
-       // border-radius: 20px;
-       // padding: 1.1rem;
-       // box-shadow: inset 0px 0px 15px rgba(0,0,0,0.08);
-          
-          // button{
-          //   color:gray;
-          //   display: block;
-          //   border-radius: 50px;
-          //   height: 5vh;
-          //   width: 2.5vw;
-          //   font-size: 1.4rem;
-          //   justify-content: center;
-          //   align-items: center;
-          //   margin-bottom:4vh ;
-          //   display: flex;
-          //   box-shadow: -5px -5px 5px #ffffff73,6px 6px 5px rgba(50, 55, 65, 0.2);
-          //   overflow: hidden;
-          //   outline: none;
-          //   border: none;
-          //   transition: transform 0.4s;
-          // }
-            
-          // button:hover{
-          //   box-shadow: inset 4px 4px 6px -1px rgba(0,0,0,0.2), inset 4px 4px 6px -1px rgba(255,255,255,0.7),
-          //   -0.5px -0.5px 0px  rgba(255,255,255,1),  0.5px 0.5px 0px  rgba(0,0,0,0.15), 0px 12px 10px -10px rgba(0,0,0,0.5);
-          //   color:#F59ABD;
-          //  // transform: translate(2px);
-          //   transform: scale(0.95);
-          // }
-        }    
-
-
-
-    
-   
-      
-
-
-  
