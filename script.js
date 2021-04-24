@@ -4,13 +4,7 @@ import { typographieView } from './src/views/portfolioGraph/typographies';
 import { tfeView } from './src/views/portfolioGraph/tfe';
 import { photosView } from './src/views/portfolioGraph/photos';
 import { plusView } from './src/views/portfolioGraph/plus';
-// import { projet1View } from './src/views/portfolioDev/projet1';
-// import { projet2View } from './src/views/portfolioDev/projet2';
-// import { projet3View } from './src/views/portfolioDev/projet3';
-// import { projet4View } from './src/views/portfolioDev/projet4';
-// import { projet5View } from './src/views/portfolioDev/projet5';
-// import { projet6View } from './src/views/portfolioDev/projet6';
-// import { projet7View } from './src/views/portfolioDev/projet7';
+
 import './style.scss';
 
 // aller directement au chargement de la page :
@@ -108,33 +102,6 @@ liens.forEach((lien) => {
     }
   });
 });
-
-// // portfolio developer= a gauche
-// const portfolioDeveloper = document.getElementById('portfolioDeveloper');
-// // const portfolioDeveloper = document.querySelector('portfolioDev');
-// const links = document.querySelectorAll('.btn-proj-dev');
-// console.log(links);
-
-// links.forEach((link) => {
-//   link.addEventListener('click', (e) => {
-//     const id = e.target.matches.id;// e.currentTarget.id; // link.id;
-//     if (id === 'nav-projet1') {
-//       portfolioDeveloper.innerHTML = projet1View;
-//     } else if (id === 'nav-projet2') {
-//       portfolioDeveloper.innerHTML = projet2View;
-//     } else if (id === 'nav-projet3') {
-//       portfolioDeveloper.innerHTML = projet3View;
-//     } else if (id === 'nav-projet4') {
-//       portfolioDeveloper.innerHTML = projet4View;
-//     } else if (id === 'nav-projet5') {
-//       portfolioDeveloper.innerHTML = projet5View;
-//     } else if (id === 'nav-projet6') {
-//       portfolioDeveloper.innerHTML = projet6View;
-//     } else if (id === 'nav-projet7') {
-//       portfolioDeveloper.innerHTML = projet7View;
-//     }
-//   });
-// });
 
 // -------- slider/carousel portfolio Developer ------------------
 
