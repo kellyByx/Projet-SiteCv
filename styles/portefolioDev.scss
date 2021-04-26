@@ -19,7 +19,7 @@
  
      .box-style{    
        width: 40vw;
-       height: 60vh;
+       height: 62vh;
        padding: 3%;
        border-radius: 10px;
        border: 5px solid #e3edf7;
@@ -29,7 +29,7 @@
 
         .projets{
         width: 380px;
-        height: 42vh;
+        height: 44vh;
         margin: auto;
         display: none;
         border-radius: 16px;
@@ -192,4 +192,8 @@
     }
       
     }
+  }
+
+  .d-none {
+    display: none;
   }
