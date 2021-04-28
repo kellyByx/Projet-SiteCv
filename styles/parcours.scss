@@ -1,190 +1,60 @@
-.parcour{
-    padding: 7% ;
-    position: relative;
+.pgParcours{
+    padding: 7% 8% ;
+    //position: relative;
+    display: flex;
+    justify-content: space-evenly;
+    color: gray;
+    
 
-    .container-parcour{
-        display: flex;
-        justify-content: space-between;
-        height: 60vh;
-        width: 86vw;
+    .imgParcours{
+    //border: 1px solid red;
+    //width: 40vw;
+    margin-top: 5vh;
+    height: 59vh;
+    border: 30px solid white;
+    border-radius: 50%;
+    box-shadow: 9px 9px 16px rgb(163, 177, 198, 0.6),  -7px -7px 16px rgba(255, 255, 255, 0.5);
+
+    img{
+        height: 100%;
+    }
+    }
+
+    .container-parcours{
         //border: 1px solid red;
+        width: 36vw;
+        margin-top:2%;
+        position: relative;
 
-        .box-lje, 
-        .box-g, 
-        .box-esa, 
-        .container-2020{
-            position: relative;
-            width: 20vw;
-            height: 31vh;
-            //border: 1px solid aqua;
-            padding-right: 0.9vw;
-            margin-left: 1.1vw;
-            padding: 1% 0 0 1%;
-            h3{
-                text-align: center;
-            }
-            p{
-                font-size: 0.9rem;
-                line-height: 1.5rem;
-                color: gray;
-                text-align: center;
-            }
-
-            .bulle{
-                position: absolute;
-                width: 8vw;
-                height: 3.6vh;
-                border-radius: 30px;
-                top:1.6vh;
-                left:6.5vw;
-                z-index: 10;
-                color: white;
-                text-align: center;
-                padding-top: 0.5vh;
-                font-weight: bold;
-            }
+        .parcour{
+         // border: 1px solid aqua;
+         margin-top: 7%;
+         h3{
+            margin-bottom:-5px;
+              .dates{
+                margin-right: 65px;
+               }
+               .dateCESS{
+                 margin-right: 111px;
+                }  
+            }    
         }
-        .box-lje{
-            .bulle{
-               // color:gray;
-                border: 2px solid 243,218,38;//rgb(228, 206, 40);
-                background-color:rgb(243,218,38);// white;
-            }
-            .inter{
-
-                background-image: url(/static/gr.png);
-                -moz-background-size: 100% 100%;
-                -webkit-background-size: 100% 100%;
-                background-size: 95% ;
-                background-repeat: no-repeat;
-            }
-          
-        }
-        .box-cess{
-            width: 19vw;
-            .bulle{
-                border: 1px solid rgb(255,172,64);
-                background-color: rgb(255,172,64);
-            }
-            .inter{
-
-                background-image: url(/static/diplo.png);
-                -moz-background-size: 100% 100%;
-                -webkit-background-size: 100% 100%;
-                background-size: 95% ;
-                background-repeat: no-repeat;
-            }
-        }
-        .box-esa{
-            .bulle{
-                border: 1px solid rgb(237,34,36);
-                background-color: rgb(237,34,36);
-            }
-            .inter{
-
-                background-image: url(/static/art.png);
-                -moz-background-size: 100% 100%;
-                -webkit-background-size: 100% 100%;
-                background-size: 95% ;
-                background-repeat: no-repeat;
-            }
-        }
-        .container-2020{
-            .bulle{
-                color: rgb(231,68,135);
-                border: 2px solid rgb(231,68,135);
-                background-color: white;// rgb(231,68,135)
-            }
-            .inter{
-
-                background-image: url(/static/web.png);
-                -moz-background-size: 100% 100%;
-                -webkit-background-size: 100% 100%;
-                background-size: 95% ;
-                background-repeat: no-repeat;
-            }
+        p{
+            margin-left: 180px;
         }
         
-        .trait-contour{
-         
-            height: 26vh;
-            width: 13vw;
-            border-radius: 50%;
-            padding:  15.5%;
-            margin: auto;
-            margin-bottom: 3vh;
-
-            .contour{
-            height: 14vh;
-            width: 7vw;
-            border-radius: 50%;
-            padding: 15%;
-            }
-            .inter{
-                background-color: white;
-                height: 10vh;
-                width: 5vw;
-                border-radius: 50%;
-                //box-shadow: inset -1px -4px 3px rgba(94,104,121,0.200), inset   5px 7px 3px rgba(94,104,121,0.200);
-           
-            }
-          
-        }
-
-        .trait-css{
-            border: 2px solid rgb(255,172,64);
-            .contour{
-                background-color:rgb(255,172,64);
-                box-shadow: inset 4px 4px 7px rgba(216, 128, 27, 0.6),inset -5px -5px 8px rgba(242, 199, 55, 0.664);
-            }
-
-        }
-        .trait-lje{
-            border: 2px solid rgb(228, 206, 40);//rgb(243,218,38);
-            .contour{
-                background-color:rgb(228, 206, 40);
-                box-shadow: inset 4px 4px 7px rgba(186, 144, 1, 0.6),inset -5px -5px 6px rgba(238, 196, 56, 0.726);
-            }
-        }
-        .trait-esa{
-            border: 2px solid rgb(237,34,36);
-            .contour{
-                background-color: rgb(237,34,36);
-                box-shadow: inset 4px 4px 5px rgba(158, 20, 23, 0.6),  inset -4px -4px 9px rgba(158, 20, 23, 0.6);
-            }
-        }
-        .trait-interface{//249,181,168
-            border: 2px solid rgb(231,68,135);
-            .contour{
-                background-color: rgb(231,68,135);
-                box-shadow: inset 4px 4px 7px rgba(139, 70, 101, 0.6),inset -5px -5px 6px rgba(224, 90, 126, 0.664);
-            }
-        }
-        .lje{
-            a{
-               color:rgb(228, 206, 40); //rgb(243,218,38);
-            }
-
-        }
-        .cess{
-            a{
-               color: rgb(255,172,64);
-            }
-
-        }
-        .esa{
-            a{
-               color: rgb(237,34,36);
-            }
-
-        }
-        .wad{
-            a{
-               color: rgb(231,68,135);
-            }
-
+        .trait{
+            top:10px;
+            left:125px;
+            height: 472px;
+            position: absolute;
+            border-right: 3px solid gray;
+            border-radius: 5%;
         }
     }
+
+   
+    
 
     .box-aide-emploi{
         // border: 1px solid red;
@@ -217,3 +87,6 @@
         }
     }
 }
+
+
+

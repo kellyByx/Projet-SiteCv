@@ -1,12 +1,17 @@
 .pgContact{
-    padding: 5rem  4.6rem 5rem 6rem;
+    // padding: 5rem  4.6rem 5rem 6rem;
+    color: grey;
+    position: relative;
     
     .interContact{
+        position: absolute;
+        top: 10.5%;
+        left:6.3%;
         background-color:#e3edf7;
         border-radius:10px ;
         width: 87.5vw;
         height: 78vh;
-        padding:6rem;
+        padding:5.5% 8%;
         box-shadow: inset -4px -4px 5px #ffffff73, inset  7px 7px 5px rgba(94,104,121,0.200);
       
 
@@ -17,10 +22,10 @@
            
             .formulaire{
                 //border: 1px solid red;
-                margin-left: 3rem;
+                //margin-left: 2%;
                 border-radius:10px ;
-                width: 25svw;;
-                padding: 0rem 2rem;
+                width: 24vw;;
+                padding: 0 2.8%;
                 box-shadow: -5px -5px 5px #ffffff73,6px 6px 5px rgba(94,104,121,0.200);
                 
                 h3{
@@ -30,15 +35,11 @@
         
                 .col{
                     width: 100%;
-                    color: grey;
-                    margin-top: 1rem;
+                    //color: grey;
+                    margin-top: 4.5%;
                    
-                        .texte{
-                        margin-bottom: 1rem;
-                        
-                        }
                         input, textarea{
-                            margin-top: 0.5rem;
+                            margin-top: 3%;
                             border :none;
                             border-radius: 5px;
                             width: 20vw;
@@ -73,7 +74,7 @@
                         }
 
                     .btn-envoyer:hover{
-                      
+                        
                         box-shadow:  inset -5px -5px 5px rgba(255, 255, 255, 0.907),
                         inset  7px 7px 5px rgba(94,104,121,0.200);    
                         transform: scale(0.95);
@@ -88,24 +89,24 @@
                 }
             }
             .containerDroit{
-               // border: 1px solid red;
+                //border: 1px solid red;
                 width: 40vw;
-                padding:3rem;
+                height: 56.5vh;
+                padding:4%;
                 
                 .box-info{
+                    //border: 1px solid red;
                     border-radius: 15px;
-                    box-shadow:  -5px -5px 5px #ffffff73,
-                    inset -5px -5px 5px #ffffff73,
-                    7px 7px 5px rgba(94,104,121,0.200), 
-                    inset 7px 7px 5px rgba(94,104,121,0.200);
-                    height: 20vh;
+                    box-shadow:  -5px -5px 5px #ffffff73, inset -5px -5px 5px #ffffff73, 7px 7px 5px rgba(94,104,121,0.200), inset 7px 7px 5px rgba(94,104,121,0.200);
+                    //height: 19vh;
+                    width: 34vw;
                     padding: 1rem;
                     margin-bottom: 4vh;
 
                     .infos{
                         //border: 1px solid red;
-                        width: 31.5vw;
-                        height: 16vh;
+                        width: 32;
+                        height: 15vh;
                         background-color: white;
                         border-radius:10px ;
                         color:grey;
@@ -116,10 +117,10 @@
                 }
                 
                 .box-liens{
-                            
-                width: 32rem;
+                 //   border: 1px solid red;                           
+               // width: 32vw;
                 height: 19vh;
-                padding: 1.2rem  4rem;
+                padding: 4% 14%;
                 border-radius: 15px;
                 //box-shadow:  -5px -5px 5px #ffffff73, inset -5px -5px 5px #ffffff73, 7px 7px 5px rgba(94,104,121,0.200), inset 7px 7px 5px rgba(94,104,121,0.200);
                         
@@ -133,7 +134,7 @@
 
                         button{
                             //border: 1px solid red;
-                            padding:1rem;
+                           // padding:5%;
                             width: 5.5vw;
                             border: none;
                             background-color: #e3edf7;
@@ -151,9 +152,10 @@
                             }
 
                             i{
+                                //color: grey;
                                 font-size: 3rem;
                                 //transition: transform 0.3s;
-                                color:black;
+                                //color:black;
                             }         
                         }
                         button:hover{

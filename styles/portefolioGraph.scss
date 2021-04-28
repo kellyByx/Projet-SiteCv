@@ -1,23 +1,27 @@
 .graphisme-portfolio{
-    padding: 8rem 10rem;
+    padding: 8.5% 10%;
     display: flex;
+    color: grey;
 
     .themes{
         width: 25vw;
+        height: 65vh;
         margin-right: 6vw;
         box-sizing: border-box;
         border-radius: 16px;
         background-color:#e3edf7;
         box-shadow: inset -4px -4px 5px #ffffff73, inset  7px 7px 5px rgba(94,104,121,0.200);
         border: 5px solid #e3edf7;
+        padding:2.5% 2% ;
         // position: relative;
         h3{
+           // color: grey;
             font-size: 1.6rem;
             text-align: center;
             background: white;
             width: 17vw;
             //height: 8vh;
-            margin: 1.6rem auto 0.5rem;
+            margin: auto ;
             padding: 1rem;
             border-radius: 16px;
             box-shadow: inset -4px -4px 5px #ffffff73, inset  7px 7px 5px rgba(94,104,121,0.200);
@@ -26,15 +30,16 @@
         .container-btn{
             // position: absolute;
             // top: 2vh;
+            margin-top: 7%;
             .box-btn{
                 display: flex;
                 justify-content: space-around;
                 width: 18vw;
-                margin: auto;
+                //margin: 0 auto;
                 //border: 1px solid red;
         
                 button{
-                    margin: 6% auto;
+                    margin: 4% auto;
                     padding: auto;
                     width: 5.5vw;
                     height: 12vh;
@@ -70,7 +75,8 @@
 
     .container-galery{
         box-sizing: border-box;
-        width: 60vw;      
+        width: 60vw;   
+        height: 65vh;   
         border-radius: 16px;
         background-color:#e3edf7;
         box-shadow: inset -6px -6px 4px #ffffff73, inset  7px 7px 5px rgba(94,104,121,0.200);
@@ -87,6 +93,7 @@
             box-shadow: inset -4px -4px 5px rgba(94,104,121,0.200), inset  7px 7px 5px rgba(94,104,121,0.200);
             border-top: 3px solid white;
             border-bottom: 3px solid white;
+            text-align: center;
             
             // width: calc(250px * 12); /* nombre image =>12 */
             // animation: scroll 60s linear infinite;
@@ -118,7 +125,7 @@
 
                 img{
                     width: 100%;
-                    border:0.4rem solid rgba(165, 149, 149, 0.2);
+                    border:6px solid rgba(165, 149, 149, 0.2);
                     box-sizing: border-box;
             
                 }
