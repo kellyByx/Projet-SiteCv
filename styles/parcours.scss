@@ -1,5 +1,5 @@
 .pgParcours{
-    padding: 8% ;
+    padding: 7% 8% ;
     //position: relative;
     display: flex;
     justify-content: space-evenly;
@@ -8,17 +8,28 @@
 
     .imgParcours{
     //border: 1px solid red;
-    width: 40vw;
+    //width: 40vw;
+    margin-top: 5vh;
+    height: 59vh;
+    border: 30px solid white;
+    border-radius: 50%;
+    box-shadow: 9px 9px 16px rgb(163, 177, 198, 0.6),  -7px -7px 16px rgba(255, 255, 255, 0.5);
+
+    img{
+        height: 100%;
+    }
     }
 
     .container-parcours{
-       //  border: 1px solid red;
-        width: 25vw;
+        //border: 1px solid red;
+        width: 36vw;
+        margin-top:2%;
+        position: relative;
+
         .parcour{
          // border: 1px solid aqua;
          margin-top: 7%;
          h3{
-            margin-left: -42%;
             margin-bottom:-5px;
               .dates{
                 margin-right: 65px;
@@ -28,8 +39,22 @@
                 }  
             }    
         }
+        p{
+            margin-left: 180px;
+        }
         
+        .trait{
+            top:10px;
+            left:125px;
+            height: 472px;
+            position: absolute;
+            border-right: 3px solid gray;
+            border-radius: 5%;
+        }
     }
+
+   
+    
 
     .box-aide-emploi{
         // border: 1px solid red;
@@ -62,3 +87,6 @@
         }
     }
 }
+
+
+
