@@ -1,5 +1,5 @@
  .web-developper-portfolio{
-   padding:10% 7%;
+   padding:8.5% 7%;
 
    .container-portfolio-dev{
      display: flex;
@@ -19,7 +19,7 @@
  
      .box-style{    
        width: 40vw;
-       height: 62vh;
+       height: 64vh;
        padding: 3%;
        border-radius: 10px;
        border: 5px solid #e3edf7;
@@ -29,13 +29,13 @@
 
         .projets{
         width: 380px;
-        height: 44vh;
+        height: 46vh;
         margin: auto;
         display: none;
         border-radius: 16px;
         background-color: white;
         border: 2px solid #e3edf7;
-        padding: 6%;
+        padding: 5% 7%;
         box-shadow: -4px -4px 5px #ffffff73, 7px 7px 5px rgba(94, 104, 121, 0.2);
         position: relative;
         
@@ -58,7 +58,10 @@
 
          .introProjet{
           font-size: 0.9rem;
+          padding-bottom: 8%;
+         
           }
+
 
           .fond-btn{
             position: absolute;

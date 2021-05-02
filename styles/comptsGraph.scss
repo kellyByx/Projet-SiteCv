@@ -346,3 +346,35 @@
         box-shadow: inset 4px 4px 7px rgba(186, 144, 1, 0.6),inset -5px -5px 6px rgba(238, 196, 56, 0.726);
     }
 }
+
+
+@media only screen and (max-width: 1460px) {
+
+    .graphisme-competence{
+      
+        .container-compt-graph{    
+
+            .compt-box-central{
+
+                .extérieur-contour-cmpt-centre{
+ 
+                    .contour-cmpt-centre{
+
+                        .cmpt-centre{
+                            padding: 4% 0;
+                            
+        
+                            ul{
+                                li{
+                                    font-size: 0.8rem;
+                                    line-height: 1.7rem;
+                                }
+                            }
+                        }
+                    }
+                }
+            
+            }
+        }
+    }
+}
